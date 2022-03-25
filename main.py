@@ -2,6 +2,8 @@ from menu_design import *
 from PySide6.QtWidgets import QApplication, QMainWindow
 from PySide6.QtCore import Qt, QEasingCurve
 
+from reologicalOne.reological import RModel
+
 import sys
 
 
@@ -67,21 +69,17 @@ class MiApp(QMainWindow, Ui_MainWindow):
         else:
             self.showNormal()
 
-    # def message(self):
-    #   print("hello world")
-
 
 # class for Reological Model 1
-class RModel(MiApp):
+'''class RModel(MiApp):
     def __init__(self):
         super().__init__()
         self.RM_Graph.clicked.connect(self.message)
 
     def message(self):
-        print("hello world")
+        print("hello world")'''
 
 
-# global class
 class Global(RModel, MiApp):
     def __init__(self):
         super().__init__()
