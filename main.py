@@ -1,8 +1,8 @@
 from menu_design import *
-import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
 from PySide6.QtCore import Qt, QEasingCurve
-from modules.reological import message
+
+import sys
 
 
 # class for menu
@@ -31,7 +31,7 @@ class MiApp(QMainWindow, Ui_MainWindow):
         self.bt_menu.clicked.connect(self.mover_menu)
 
         # reological model
-        self.RM_Graph.clicked.connect(message)
+        # self.RM_Graph.clicked.connect(self.message)
 
     def control_bt_minimizar(self):
         self.showMinimized()
@@ -67,9 +67,28 @@ class MiApp(QMainWindow, Ui_MainWindow):
         else:
             self.showNormal()
 
+    # def message(self):
+    #   print("hello world")
+
+
+# class for Reological Model 1
+class RModel(MiApp):
+    def __init__(self):
+        super().__init__()
+        self.RM_Graph.clicked.connect(self.message)
+
+    def message(self):
+        print("hello world")
+
+
+# global class
+class Global(RModel, MiApp):
+    def __init__(self):
+        super().__init__()
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    mi_app = MiApp()
+    mi_app = Global()
     mi_app.show()
     sys.exit(app.exec())
