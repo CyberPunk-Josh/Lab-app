@@ -4,6 +4,7 @@ from PySide6.QtCore import Qt, QEasingCurve
 
 from reologicalOne.reological import RModel
 
+
 import sys
 
 
@@ -68,16 +69,6 @@ class MiApp(QMainWindow, Ui_MainWindow):
                 event.accept()
         else:
             self.showNormal()
-
-
-# class for Reological Model 1
-'''class RModel(MiApp):
-    def __init__(self):
-        super().__init__()
-        self.RM_Graph.clicked.connect(self.message)
-
-    def message(self):
-        print("hello world")'''
 
 
 class Global(RModel, MiApp):
