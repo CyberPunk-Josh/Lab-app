@@ -70,6 +70,7 @@ class RModel(QMainWindow, Ui_MainWindow):
         self.RM_Clear.clicked.connect(self.clearReologicalValues)
         self.RM_ComboBox.currentTextChanged.connect(self.comboChanged)
         self.RM_Save.clicked.connect(self.showSaveWindow)
+        self.RM_Rep.clicked.connect(self.getReologicalReport)
         self.subventana.aceptarButton.clicked.connect(self.saveValuesToDB)
 
 
@@ -191,6 +192,7 @@ class RModel(QMainWindow, Ui_MainWindow):
         # showing sub window to add description
         self.subventana.show()
 
+    # TODO Add a field validator before saving values to database
     def saveValuesToDB(self):
         try:
             # getting tetha values
@@ -227,4 +229,72 @@ class RModel(QMainWindow, Ui_MainWindow):
             self.subventana.close()
             self.subventana.textEdit.setText("")
 
+    def getReologicalReport(self):
+        # open window to save file
+        userPath = QFileDialog.getExistingDirectory(
+            parent=self,
+            caption='Selecciona una ubicacion',
+            dir=self.desktop
+        )
+        # create excel file
+        wb = openpyxl.Workbook()
+        ws = wb.active
 
+        # get values of the active index
+        index = self.RM_ComboBox.currentIndex()
+        if len(self.records[index]["tethaValues"]) > 0:
+            # structuring data
+            rows = [
+                ['y', 't'],
+                [self.records[index]["valuesX"][0], self.records[index]["valuesY"][0]],
+                [self.records[index]["valuesX"][1], self.records[index]["valuesY"][1]],
+                [self.records[index]["valuesX"][2], self.records[index]["valuesY"][2]],
+                [self.records[index]["valuesX"][3], self.records[index]["valuesY"][3]],
+                [self.records[index]["valuesX"][4], self.records[index]["valuesY"][4]],
+                [self.records[index]["valuesX"][5], self.records[index]["valuesY"][5]],
+            ]
+            # inserting data into excel file
+            for row in rows:
+                ws.append(row)
+
+            # creating chart
+            c1 = openpyxl.chart.ScatterChart()
+            c1.title = self.records[index]["name"] + '- ' + self.records[index]["Temperatura"]
+            c1.style = 2
+            c1.y_axis.title = 't'
+            c1.x_axis.title = 'y'
+
+            xValues = openpyxl.chart.Reference(ws, min_col=1, min_row=2, max_row=7)
+            yValues = openpyxl.chart.Reference(ws, min_col=2, min_row=2, max_row=7)
+
+            series = openpyxl.chart.Series(yValues, xValues, title='Modelo Reològico')
+
+            c1.append(series)
+
+            # style line
+            s1 = c1.series[0]
+            s1.marker = openpyxl.chart.marker.Marker('x')  # Add marker for intersection
+            s1.marker.graphicalProperties.solidFill = '000000'  # Color for marker
+            s1.graphicalProperties.line.width = 30000
+            s1.smooth = True  # Make the line smooth
+
+            # adding reological data
+            ws['E2'] = 'VA'
+            ws['F2'] = self.records[index]["VA"]
+            ws['G2'] = '[CP]'
+
+            ws['E3'] = 'VP'
+            ws['F3'] = self.records[index]["VP"]
+            ws['G3'] = '[CP]'
+
+            ws['E4'] = 'PC'
+            ws['F4'] = self.records[index]["PC"]
+            ws['G4'] = '[ADIM]'
+            # adding chat and saving file
+            ws.add_chart(c1, 'B10')
+            wb.save(f"{userPath}/report.xlsx")
+            # success message for user
+            QMessageBox.information(self, "Correcto", "Reporte guardado exitosamente")
+
+        else:
+            QMessageBox.information(self, "Error", "Todos los campos son obligatorios, revisa tu información")

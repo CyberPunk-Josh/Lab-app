@@ -2,7 +2,9 @@ from menu_design import *
 from PySide6.QtWidgets import QApplication, QMainWindow
 from PySide6.QtCore import Qt, QEasingCurve
 
+# Local files
 from reologicalOne.reological import RModel
+from reologicalTwo.reologicalDB import RModelDB
 
 
 import sys
@@ -71,7 +73,7 @@ class MiApp(QMainWindow, Ui_MainWindow):
             self.showNormal()
 
 
-class Global(RModel, MiApp):
+class Global(RModelDB, RModel, MiApp):
     def __init__(self):
         super().__init__()
 
