@@ -5,6 +5,7 @@ from PySide6.QtCore import Qt, QEasingCurve
 # Local files
 from reologicalOne.reological import RModel
 from reologicalTwo.reologicalDB import RModelDB
+from density.density import Density
 
 
 import sys
@@ -73,7 +74,7 @@ class MiApp(QMainWindow, Ui_MainWindow):
             self.showNormal()
 
 
-class Global(RModelDB, RModel, MiApp):
+class Global(Density, RModelDB, RModel, MiApp):
     def __init__(self):
         super().__init__()
 

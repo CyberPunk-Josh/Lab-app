@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'menuodqJJd.ui'
+## Form generated from reading UI file 'menuHIDrhc.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.3
 ##
@@ -1043,9 +1043,297 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.page_uno)
         self.page_dos = QWidget()
         self.page_dos.setObjectName(u"page_dos")
-        self.pushButton_3 = QPushButton(self.page_dos)
-        self.pushButton_3.setObjectName(u"pushButton_3")
-        self.pushButton_3.setGeometry(QRect(190, 190, 231, 141))
+        self.gridLayoutWidget_3 = QWidget(self.page_dos)
+        self.gridLayoutWidget_3.setObjectName(u"gridLayoutWidget_3")
+        self.gridLayoutWidget_3.setGeometry(QRect(10, 10, 491, 151))
+        self.gridLayout_3 = QGridLayout(self.gridLayoutWidget_3)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.density = QDoubleSpinBox(self.gridLayoutWidget_3)
+        self.density.setObjectName(u"density")
+
+        self.gridLayout_3.addWidget(self.density, 0, 1, 1, 1)
+
+        self.label_9 = QLabel(self.gridLayoutWidget_3)
+        self.label_9.setObjectName(u"label_9")
+        font = QFont()
+        self.label_9.setFont(font)
+        self.label_9.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_3.addWidget(self.label_9, 4, 0, 1, 1)
+
+        self.label_10 = QLabel(self.gridLayoutWidget_3)
+        self.label_10.setObjectName(u"label_10")
+        self.label_10.setFont(font)
+        self.label_10.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_3.addWidget(self.label_10, 0, 0, 1, 1)
+
+        self.qFluid = QSpinBox(self.gridLayoutWidget_3)
+        self.qFluid.setObjectName(u"qFluid")
+        self.qFluid.setMaximum(2000)
+        self.qFluid.setSingleStep(5)
+        self.qFluid.setValue(500)
+
+        self.gridLayout_3.addWidget(self.qFluid, 4, 1, 1, 1)
+
+        self.label_11 = QLabel(self.gridLayoutWidget_3)
+        self.label_11.setObjectName(u"label_11")
+        self.label_11.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_3.addWidget(self.label_11, 2, 0, 1, 1)
+
+        self.Ty = QDoubleSpinBox(self.gridLayoutWidget_3)
+        self.Ty.setObjectName(u"Ty")
+
+        self.gridLayout_3.addWidget(self.Ty, 2, 1, 1, 1)
+
+        self.label_12 = QLabel(self.gridLayoutWidget_3)
+        self.label_12.setObjectName(u"label_12")
+        self.label_12.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_3.addWidget(self.label_12, 3, 0, 1, 1)
+
+        self.mp = QDoubleSpinBox(self.gridLayoutWidget_3)
+        self.mp.setObjectName(u"mp")
+
+        self.gridLayout_3.addWidget(self.mp, 3, 1, 1, 1)
+
+        self.verticalLayoutWidget_3 = QWidget(self.page_dos)
+        self.verticalLayoutWidget_3.setObjectName(u"verticalLayoutWidget_3")
+        self.verticalLayoutWidget_3.setGeometry(QRect(10, 230, 691, 361))
+        self.verticalLayout_6 = QVBoxLayout(self.verticalLayoutWidget_3)
+        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
+        self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.Density_Table = QTableWidget(self.verticalLayoutWidget_3)
+        if (self.Density_Table.columnCount() < 4):
+            self.Density_Table.setColumnCount(4)
+        __qtablewidgetitem34 = QTableWidgetItem()
+        __qtablewidgetitem34.setTextAlignment(Qt.AlignCenter);
+        self.Density_Table.setHorizontalHeaderItem(0, __qtablewidgetitem34)
+        __qtablewidgetitem35 = QTableWidgetItem()
+        __qtablewidgetitem35.setTextAlignment(Qt.AlignCenter);
+        self.Density_Table.setHorizontalHeaderItem(1, __qtablewidgetitem35)
+        __qtablewidgetitem36 = QTableWidgetItem()
+        __qtablewidgetitem36.setTextAlignment(Qt.AlignCenter);
+        self.Density_Table.setHorizontalHeaderItem(2, __qtablewidgetitem36)
+        __qtablewidgetitem37 = QTableWidgetItem()
+        __qtablewidgetitem37.setTextAlignment(Qt.AlignCenter);
+        self.Density_Table.setHorizontalHeaderItem(3, __qtablewidgetitem37)
+        if (self.Density_Table.rowCount() < 7):
+            self.Density_Table.setRowCount(7)
+        __qtablewidgetitem38 = QTableWidgetItem()
+        self.Density_Table.setVerticalHeaderItem(0, __qtablewidgetitem38)
+        __qtablewidgetitem39 = QTableWidgetItem()
+        self.Density_Table.setVerticalHeaderItem(1, __qtablewidgetitem39)
+        __qtablewidgetitem40 = QTableWidgetItem()
+        self.Density_Table.setVerticalHeaderItem(2, __qtablewidgetitem40)
+        __qtablewidgetitem41 = QTableWidgetItem()
+        self.Density_Table.setVerticalHeaderItem(3, __qtablewidgetitem41)
+        __qtablewidgetitem42 = QTableWidgetItem()
+        self.Density_Table.setVerticalHeaderItem(4, __qtablewidgetitem42)
+        __qtablewidgetitem43 = QTableWidgetItem()
+        self.Density_Table.setVerticalHeaderItem(5, __qtablewidgetitem43)
+        __qtablewidgetitem44 = QTableWidgetItem()
+        self.Density_Table.setVerticalHeaderItem(6, __qtablewidgetitem44)
+        __qtablewidgetitem45 = QTableWidgetItem()
+        __qtablewidgetitem45.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem45.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(0, 0, __qtablewidgetitem45)
+        __qtablewidgetitem46 = QTableWidgetItem()
+        __qtablewidgetitem46.setTextAlignment(Qt.AlignCenter);
+        self.Density_Table.setItem(0, 1, __qtablewidgetitem46)
+        __qtablewidgetitem47 = QTableWidgetItem()
+        __qtablewidgetitem47.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem47.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(0, 2, __qtablewidgetitem47)
+        __qtablewidgetitem48 = QTableWidgetItem()
+        __qtablewidgetitem48.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem48.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(0, 3, __qtablewidgetitem48)
+        __qtablewidgetitem49 = QTableWidgetItem()
+        __qtablewidgetitem49.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem49.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(1, 0, __qtablewidgetitem49)
+        __qtablewidgetitem50 = QTableWidgetItem()
+        __qtablewidgetitem50.setTextAlignment(Qt.AlignCenter);
+        self.Density_Table.setItem(1, 1, __qtablewidgetitem50)
+        __qtablewidgetitem51 = QTableWidgetItem()
+        __qtablewidgetitem51.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem51.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(1, 2, __qtablewidgetitem51)
+        __qtablewidgetitem52 = QTableWidgetItem()
+        __qtablewidgetitem52.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem52.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(1, 3, __qtablewidgetitem52)
+        __qtablewidgetitem53 = QTableWidgetItem()
+        __qtablewidgetitem53.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem53.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(2, 0, __qtablewidgetitem53)
+        __qtablewidgetitem54 = QTableWidgetItem()
+        __qtablewidgetitem54.setTextAlignment(Qt.AlignCenter);
+        self.Density_Table.setItem(2, 1, __qtablewidgetitem54)
+        __qtablewidgetitem55 = QTableWidgetItem()
+        __qtablewidgetitem55.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem55.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(2, 2, __qtablewidgetitem55)
+        __qtablewidgetitem56 = QTableWidgetItem()
+        __qtablewidgetitem56.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem56.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(2, 3, __qtablewidgetitem56)
+        __qtablewidgetitem57 = QTableWidgetItem()
+        __qtablewidgetitem57.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem57.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(3, 0, __qtablewidgetitem57)
+        __qtablewidgetitem58 = QTableWidgetItem()
+        __qtablewidgetitem58.setTextAlignment(Qt.AlignCenter);
+        self.Density_Table.setItem(3, 1, __qtablewidgetitem58)
+        __qtablewidgetitem59 = QTableWidgetItem()
+        __qtablewidgetitem59.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem59.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(3, 2, __qtablewidgetitem59)
+        __qtablewidgetitem60 = QTableWidgetItem()
+        __qtablewidgetitem60.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem60.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(3, 3, __qtablewidgetitem60)
+        __qtablewidgetitem61 = QTableWidgetItem()
+        __qtablewidgetitem61.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem61.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(4, 0, __qtablewidgetitem61)
+        __qtablewidgetitem62 = QTableWidgetItem()
+        __qtablewidgetitem62.setTextAlignment(Qt.AlignCenter);
+        self.Density_Table.setItem(4, 1, __qtablewidgetitem62)
+        __qtablewidgetitem63 = QTableWidgetItem()
+        __qtablewidgetitem63.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem63.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(4, 2, __qtablewidgetitem63)
+        __qtablewidgetitem64 = QTableWidgetItem()
+        __qtablewidgetitem64.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem64.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(4, 3, __qtablewidgetitem64)
+        __qtablewidgetitem65 = QTableWidgetItem()
+        __qtablewidgetitem65.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem65.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(5, 0, __qtablewidgetitem65)
+        __qtablewidgetitem66 = QTableWidgetItem()
+        __qtablewidgetitem66.setTextAlignment(Qt.AlignCenter);
+        self.Density_Table.setItem(5, 1, __qtablewidgetitem66)
+        __qtablewidgetitem67 = QTableWidgetItem()
+        __qtablewidgetitem67.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem67.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(5, 2, __qtablewidgetitem67)
+        __qtablewidgetitem68 = QTableWidgetItem()
+        __qtablewidgetitem68.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem68.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(5, 3, __qtablewidgetitem68)
+        __qtablewidgetitem69 = QTableWidgetItem()
+        __qtablewidgetitem69.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem69.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(6, 0, __qtablewidgetitem69)
+        __qtablewidgetitem70 = QTableWidgetItem()
+        __qtablewidgetitem70.setTextAlignment(Qt.AlignCenter);
+        self.Density_Table.setItem(6, 1, __qtablewidgetitem70)
+        __qtablewidgetitem71 = QTableWidgetItem()
+        __qtablewidgetitem71.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem71.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(6, 2, __qtablewidgetitem71)
+        __qtablewidgetitem72 = QTableWidgetItem()
+        __qtablewidgetitem72.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem72.setFlags(Qt.ItemIsSelectable|Qt.ItemIsDragEnabled|Qt.ItemIsDropEnabled|Qt.ItemIsUserCheckable|Qt.ItemIsEnabled);
+        self.Density_Table.setItem(6, 3, __qtablewidgetitem72)
+        self.Density_Table.setObjectName(u"Density_Table")
+
+        self.verticalLayout_6.addWidget(self.Density_Table)
+
+        self.Nhe = QPushButton(self.page_dos)
+        self.Nhe.setObjectName(u"Nhe")
+        self.Nhe.setGeometry(QRect(10, 610, 112, 35))
+        self.NCRe = QPushButton(self.page_dos)
+        self.NCRe.setObjectName(u"NCRe")
+        self.NCRe.setGeometry(QRect(140, 610, 112, 35))
+        self.DP = QPushButton(self.page_dos)
+        self.DP.setObjectName(u"DP")
+        self.DP.setGeometry(QRect(260, 610, 112, 35))
+        self.Dp_Clean = QPushButton(self.page_dos)
+        self.Dp_Clean.setObjectName(u"Dp_Clean")
+        self.Dp_Clean.setGeometry(QRect(390, 610, 112, 35))
+        self.gridLayoutWidget_4 = QWidget(self.page_dos)
+        self.gridLayoutWidget_4.setObjectName(u"gridLayoutWidget_4")
+        self.gridLayoutWidget_4.setGeometry(QRect(10, 660, 691, 211))
+        self.gridLayout_4 = QGridLayout(self.gridLayoutWidget_4)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.Dp_Superficial = QDoubleSpinBox(self.gridLayoutWidget_4)
+        self.Dp_Superficial.setObjectName(u"Dp_Superficial")
+        self.Dp_Superficial.setEnabled(False)
+        self.Dp_Superficial.setMaximum(100000000000000.000000000000000)
+
+        self.gridLayout_4.addWidget(self.Dp_Superficial, 0, 1, 1, 1)
+
+        self.label_13 = QLabel(self.gridLayoutWidget_4)
+        self.label_13.setObjectName(u"label_13")
+        self.label_13.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_13, 2, 0, 1, 1)
+
+        self.Dp_Total = QDoubleSpinBox(self.gridLayoutWidget_4)
+        self.Dp_Total.setObjectName(u"Dp_Total")
+        self.Dp_Total.setEnabled(False)
+        self.Dp_Total.setMaximum(100000000000000.000000000000000)
+
+        self.gridLayout_4.addWidget(self.Dp_Total, 2, 1, 1, 1)
+
+        self.DEC = QDoubleSpinBox(self.gridLayoutWidget_4)
+        self.DEC.setObjectName(u"DEC")
+        self.DEC.setEnabled(False)
+        self.DEC.setMaximum(100000000000000.000000000000000)
+
+        self.gridLayout_4.addWidget(self.DEC, 3, 1, 1, 1)
+
+        self.label_14 = QLabel(self.gridLayoutWidget_4)
+        self.label_14.setObjectName(u"label_14")
+        self.label_14.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_14, 0, 0, 1, 1)
+
+        self.label_15 = QLabel(self.gridLayoutWidget_4)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_15, 3, 0, 1, 1)
+
+        self.label_16 = QLabel(self.gridLayoutWidget_4)
+        self.label_16.setObjectName(u"label_16")
+        self.label_16.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_16, 1, 0, 1, 1)
+
+        self.Dp_Barrena = QDoubleSpinBox(self.gridLayoutWidget_4)
+        self.Dp_Barrena.setObjectName(u"Dp_Barrena")
+        self.Dp_Barrena.setEnabled(False)
+        self.Dp_Barrena.setMaximum(100000000000000.000000000000000)
+
+        self.gridLayout_4.addWidget(self.Dp_Barrena, 1, 1, 1, 1)
+
+        self.label_17 = QLabel(self.page_dos)
+        self.label_17.setObjectName(u"label_17")
+        self.label_17.setGeometry(QRect(930, 20, 211, 24))
+        self.label_17.setFont(font)
+        self.label_17.setAlignment(Qt.AlignCenter)
+        self.label_18 = QLabel(self.page_dos)
+        self.label_18.setObjectName(u"label_18")
+        self.label_18.setGeometry(QRect(820, 40, 371, 441))
+        self.label_18.setPixmap(QPixmap(u"../../../../../../Pictures/Saved Pictures/WhatsApp Image 2022-01-01 at 2.52.27 PM (2).jpeg"))
+        self.label_19 = QLabel(self.page_dos)
+        self.label_19.setObjectName(u"label_19")
+        self.label_19.setGeometry(QRect(750, 510, 471, 301))
+        self.label_19.setPixmap(QPixmap(u"../../../../../../Pictures/Saved Pictures/WhatsApp Image 2022-01-01 at 2.52.27 PM (3).jpeg"))
+        self.label_20 = QLabel(self.page_dos)
+        self.label_20.setObjectName(u"label_20")
+        self.label_20.setGeometry(QRect(20, 170, 621, 51))
+        font1 = QFont()
+        font1.setPointSize(8)
+        self.label_20.setFont(font1)
         self.stackedWidget.addWidget(self.page_dos)
         self.page_tres = QWidget()
         self.page_tres.setObjectName(u"page_tres")
@@ -1191,7 +1479,115 @@ class Ui_MainWindow(object):
         self.RM_VaDB.setSuffix(QCoreApplication.translate("MainWindow", u" cp", None))
         self.RM_VaDB.setPrefix("")
         self.RM_VpDB.setSuffix(QCoreApplication.translate("MainWindow", u" cp", None))
-        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"2", None))
+        self.density.setSuffix(QCoreApplication.translate("MainWindow", u" [gr/cm3]", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Q", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"pf", None))
+        self.qFluid.setSuffix(QCoreApplication.translate("MainWindow", u" [rpm]", None))
+        self.qFluid.setPrefix("")
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Ty", None))
+        self.Ty.setSuffix(QCoreApplication.translate("MainWindow", u" [lb/100ft2]", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"mp", None))
+        self.mp.setSuffix(QCoreApplication.translate("MainWindow", u" [cp]", None))
+        ___qtablewidgetitem34 = self.Density_Table.horizontalHeaderItem(0)
+        ___qtablewidgetitem34.setText(QCoreApplication.translate("MainWindow", u"NHe", None));
+        ___qtablewidgetitem35 = self.Density_Table.horizontalHeaderItem(1)
+        ___qtablewidgetitem35.setText(QCoreApplication.translate("MainWindow", u"NCRe", None));
+        ___qtablewidgetitem36 = self.Density_Table.horizontalHeaderItem(2)
+        ___qtablewidgetitem36.setText(QCoreApplication.translate("MainWindow", u"Flujo", None));
+        ___qtablewidgetitem37 = self.Density_Table.horizontalHeaderItem(3)
+        ___qtablewidgetitem37.setText(QCoreApplication.translate("MainWindow", u"\u2206P", None));
+        ___qtablewidgetitem38 = self.Density_Table.verticalHeaderItem(0)
+        ___qtablewidgetitem38.setText(QCoreApplication.translate("MainWindow", u"Tp", None));
+        ___qtablewidgetitem39 = self.Density_Table.verticalHeaderItem(1)
+        ___qtablewidgetitem39.setText(QCoreApplication.translate("MainWindow", u"Hw", None));
+        ___qtablewidgetitem40 = self.Density_Table.verticalHeaderItem(2)
+        ___qtablewidgetitem40.setText(QCoreApplication.translate("MainWindow", u"Dc", None));
+        ___qtablewidgetitem41 = self.Density_Table.verticalHeaderItem(3)
+        ___qtablewidgetitem41.setText(QCoreApplication.translate("MainWindow", u"AG_DC", None));
+        ___qtablewidgetitem42 = self.Density_Table.verticalHeaderItem(4)
+        ___qtablewidgetitem42.setText(QCoreApplication.translate("MainWindow", u"AG_HW", None));
+        ___qtablewidgetitem43 = self.Density_Table.verticalHeaderItem(5)
+        ___qtablewidgetitem43.setText(QCoreApplication.translate("MainWindow", u"AG_TP", None));
+        ___qtablewidgetitem44 = self.Density_Table.verticalHeaderItem(6)
+        ___qtablewidgetitem44.setText(QCoreApplication.translate("MainWindow", u"TR_TP", None));
+
+        __sortingEnabled2 = self.Density_Table.isSortingEnabled()
+        self.Density_Table.setSortingEnabled(False)
+        ___qtablewidgetitem45 = self.Density_Table.item(0, 0)
+        ___qtablewidgetitem45.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem46 = self.Density_Table.item(0, 1)
+        ___qtablewidgetitem46.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem47 = self.Density_Table.item(0, 2)
+        ___qtablewidgetitem47.setText(QCoreApplication.translate("MainWindow", u"-", None));
+        ___qtablewidgetitem48 = self.Density_Table.item(0, 3)
+        ___qtablewidgetitem48.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem49 = self.Density_Table.item(1, 0)
+        ___qtablewidgetitem49.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem50 = self.Density_Table.item(1, 1)
+        ___qtablewidgetitem50.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem51 = self.Density_Table.item(1, 2)
+        ___qtablewidgetitem51.setText(QCoreApplication.translate("MainWindow", u"-", None));
+        ___qtablewidgetitem52 = self.Density_Table.item(1, 3)
+        ___qtablewidgetitem52.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem53 = self.Density_Table.item(2, 0)
+        ___qtablewidgetitem53.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem54 = self.Density_Table.item(2, 1)
+        ___qtablewidgetitem54.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem55 = self.Density_Table.item(2, 2)
+        ___qtablewidgetitem55.setText(QCoreApplication.translate("MainWindow", u"-", None));
+        ___qtablewidgetitem56 = self.Density_Table.item(2, 3)
+        ___qtablewidgetitem56.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem57 = self.Density_Table.item(3, 0)
+        ___qtablewidgetitem57.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem58 = self.Density_Table.item(3, 1)
+        ___qtablewidgetitem58.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem59 = self.Density_Table.item(3, 2)
+        ___qtablewidgetitem59.setText(QCoreApplication.translate("MainWindow", u"-", None));
+        ___qtablewidgetitem60 = self.Density_Table.item(3, 3)
+        ___qtablewidgetitem60.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem61 = self.Density_Table.item(4, 0)
+        ___qtablewidgetitem61.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem62 = self.Density_Table.item(4, 1)
+        ___qtablewidgetitem62.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem63 = self.Density_Table.item(4, 2)
+        ___qtablewidgetitem63.setText(QCoreApplication.translate("MainWindow", u"-", None));
+        ___qtablewidgetitem64 = self.Density_Table.item(4, 3)
+        ___qtablewidgetitem64.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem65 = self.Density_Table.item(5, 0)
+        ___qtablewidgetitem65.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem66 = self.Density_Table.item(5, 1)
+        ___qtablewidgetitem66.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem67 = self.Density_Table.item(5, 2)
+        ___qtablewidgetitem67.setText(QCoreApplication.translate("MainWindow", u"-", None));
+        ___qtablewidgetitem68 = self.Density_Table.item(5, 3)
+        ___qtablewidgetitem68.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem69 = self.Density_Table.item(6, 0)
+        ___qtablewidgetitem69.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem70 = self.Density_Table.item(6, 1)
+        ___qtablewidgetitem70.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem71 = self.Density_Table.item(6, 2)
+        ___qtablewidgetitem71.setText(QCoreApplication.translate("MainWindow", u"-", None));
+        ___qtablewidgetitem72 = self.Density_Table.item(6, 3)
+        ___qtablewidgetitem72.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        self.Density_Table.setSortingEnabled(__sortingEnabled2)
+
+        self.Nhe.setText(QCoreApplication.translate("MainWindow", u"Nhe", None))
+        self.NCRe.setText(QCoreApplication.translate("MainWindow", u"NCRe", None))
+        self.DP.setText(QCoreApplication.translate("MainWindow", u"\u2206P", None))
+        self.Dp_Clean.setText(QCoreApplication.translate("MainWindow", u"Limpiar", None))
+        self.Dp_Superficial.setSuffix(QCoreApplication.translate("MainWindow", u" [psi]", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"\u2206Ptotal", None))
+        self.Dp_Total.setPrefix("")
+        self.Dp_Total.setSuffix(QCoreApplication.translate("MainWindow", u" [psi]", None))
+        self.DEC.setSuffix(QCoreApplication.translate("MainWindow", u" [gr/cm3]", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"\u2206Psuperficial ", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Desntidad Equivalente de Circulaci\u00f3n", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"\u2206Pbarrena", None))
+        self.Dp_Barrena.setSuffix(QCoreApplication.translate("MainWindow", u" [psi]", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"Estado Mec\u00e1nico", None))
+        self.label_18.setText("")
+        self.label_19.setText("")
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Se considera un valor de E constante = 0.000053 [ADIM] de acuerdo al equipo superficial", None))
         self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"3", None))
         self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"4", None))
         self.pushButton_12.setText(QCoreApplication.translate("MainWindow", u"5", None))
