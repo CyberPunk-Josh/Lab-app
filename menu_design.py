@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'menubIAewU.ui'
+## Form generated from reading UI file 'menurvGfuG.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.3
 ##
@@ -1362,59 +1362,12 @@ class Ui_MainWindow(object):
         self.gridLayout_5 = QGridLayout(self.gridLayoutWidget_5)
         self.gridLayout_5.setObjectName(u"gridLayout_5")
         self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
-        self.label_24 = QLabel(self.gridLayoutWidget_5)
-        self.label_24.setObjectName(u"label_24")
+        self.casing_length = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.casing_length.setObjectName(u"casing_length")
+        self.casing_length.setMaximum(100000.000000000000000)
+        self.casing_length.setValue(11500.000000000000000)
 
-        self.gridLayout_5.addWidget(self.label_24, 2, 0, 1, 1)
-
-        self.label_30 = QLabel(self.gridLayoutWidget_5)
-        self.label_30.setObjectName(u"label_30")
-
-        self.gridLayout_5.addWidget(self.label_30, 8, 0, 1, 1)
-
-        self.drill_pipe_size = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.drill_pipe_size.setObjectName(u"drill_pipe_size")
-        self.drill_pipe_size.setValue(4.280000000000000)
-
-        self.gridLayout_5.addWidget(self.drill_pipe_size, 9, 1, 1, 1)
-
-        self.fracture_gradient = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.fracture_gradient.setObjectName(u"fracture_gradient")
-        self.fracture_gradient.setValue(14.000000000000000)
-
-        self.gridLayout_5.addWidget(self.fracture_gradient, 18, 1, 1, 1)
-
-        self.L_300 = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.L_300.setObjectName(u"L_300")
-        self.L_300.setValue(40.000000000000000)
-
-        self.gridLayout_5.addWidget(self.L_300, 20, 1, 1, 1)
-
-        self.label_27 = QLabel(self.gridLayoutWidget_5)
-        self.label_27.setObjectName(u"label_27")
-
-        self.gridLayout_5.addWidget(self.label_27, 5, 0, 1, 1)
-
-        self.label_38 = QLabel(self.gridLayoutWidget_5)
-        self.label_38.setObjectName(u"label_38")
-
-        self.gridLayout_5.addWidget(self.label_38, 16, 0, 1, 1)
-
-        self.label_34 = QLabel(self.gridLayoutWidget_5)
-        self.label_34.setObjectName(u"label_34")
-
-        self.gridLayout_5.addWidget(self.label_34, 12, 0, 1, 1)
-
-        self.label_40 = QLabel(self.gridLayoutWidget_5)
-        self.label_40.setObjectName(u"label_40")
-
-        self.gridLayout_5.addWidget(self.label_40, 18, 0, 1, 1)
-
-        self.yield_point = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.yield_point.setObjectName(u"yield_point")
-        self.yield_point.setValue(14.000000000000000)
-
-        self.gridLayout_5.addWidget(self.yield_point, 3, 1, 1, 1)
+        self.gridLayout_5.addWidget(self.casing_length, 8, 2, 1, 1)
 
         self.label_33 = QLabel(self.gridLayoutWidget_5)
         self.label_33.setObjectName(u"label_33")
@@ -1426,62 +1379,16 @@ class Ui_MainWindow(object):
 
         self.gridLayout_5.addWidget(self.label_29, 7, 0, 1, 1)
 
-        self.plastic_viscosity = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.plastic_viscosity.setObjectName(u"plastic_viscosity")
-        self.plastic_viscosity.setValue(26.000000000000000)
+        self.drill_pipe_size = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.drill_pipe_size.setObjectName(u"drill_pipe_size")
+        self.drill_pipe_size.setValue(4.280000000000000)
 
-        self.gridLayout_5.addWidget(self.plastic_viscosity, 2, 1, 1, 1)
+        self.gridLayout_5.addWidget(self.drill_pipe_size, 9, 2, 1, 1)
 
-        self.solid_sg = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.solid_sg.setObjectName(u"solid_sg")
-        self.solid_sg.setValue(3.820000000000000)
+        self.label_23 = QLabel(self.gridLayoutWidget_5)
+        self.label_23.setObjectName(u"label_23")
 
-        self.gridLayout_5.addWidget(self.solid_sg, 1, 1, 1, 1)
-
-        self.diameter_of_particle = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.diameter_of_particle.setObjectName(u"diameter_of_particle")
-        self.diameter_of_particle.setValue(0.250000000000000)
-
-        self.gridLayout_5.addWidget(self.diameter_of_particle, 17, 1, 1, 1)
-
-        self.prof_total = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.prof_total.setObjectName(u"prof_total")
-        self.prof_total.setMaximum(100000.000000000000000)
-        self.prof_total.setValue(15000.000000000000000)
-
-        self.gridLayout_5.addWidget(self.prof_total, 19, 1, 1, 1)
-
-        self.label_37 = QLabel(self.gridLayoutWidget_5)
-        self.label_37.setObjectName(u"label_37")
-
-        self.gridLayout_5.addWidget(self.label_37, 15, 0, 1, 1)
-
-        self.label_31 = QLabel(self.gridLayoutWidget_5)
-        self.label_31.setObjectName(u"label_31")
-
-        self.gridLayout_5.addWidget(self.label_31, 9, 0, 1, 1)
-
-        self.label_43 = QLabel(self.gridLayoutWidget_5)
-        self.label_43.setObjectName(u"label_43")
-
-        self.gridLayout_5.addWidget(self.label_43, 21, 0, 1, 1)
-
-        self.label_36 = QLabel(self.gridLayoutWidget_5)
-        self.label_36.setObjectName(u"label_36")
-
-        self.gridLayout_5.addWidget(self.label_36, 14, 0, 1, 1)
-
-        self.surface_case = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.surface_case.setObjectName(u"surface_case")
-        self.surface_case.setValue(0.150000000000000)
-
-        self.gridLayout_5.addWidget(self.surface_case, 14, 1, 1, 1)
-
-        self.gel_strength = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.gel_strength.setObjectName(u"gel_strength")
-        self.gel_strength.setValue(8.000000000000000)
-
-        self.gridLayout_5.addWidget(self.gel_strength, 4, 1, 1, 1)
+        self.gridLayout_5.addWidget(self.label_23, 1, 0, 1, 1)
 
         self.label_42 = QLabel(self.gridLayoutWidget_5)
         self.label_42.setObjectName(u"label_42")
@@ -1492,123 +1399,247 @@ class Ui_MainWindow(object):
         self.density_of_particle.setObjectName(u"density_of_particle")
         self.density_of_particle.setValue(22.000000000000000)
 
-        self.gridLayout_5.addWidget(self.density_of_particle, 16, 1, 1, 1)
+        self.gridLayout_5.addWidget(self.density_of_particle, 16, 2, 1, 1)
 
-        self.label_23 = QLabel(self.gridLayoutWidget_5)
-        self.label_23.setObjectName(u"label_23")
+        self.yield_point = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.yield_point.setObjectName(u"yield_point")
+        self.yield_point.setValue(14.000000000000000)
 
-        self.gridLayout_5.addWidget(self.label_23, 1, 0, 1, 1)
+        self.gridLayout_5.addWidget(self.yield_point, 3, 2, 1, 1)
+
+        self.label_27 = QLabel(self.gridLayoutWidget_5)
+        self.label_27.setObjectName(u"label_27")
+
+        self.gridLayout_5.addWidget(self.label_27, 5, 0, 1, 1)
+
+        self.plastic_viscosity = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.plastic_viscosity.setObjectName(u"plastic_viscosity")
+        self.plastic_viscosity.setValue(26.000000000000000)
+
+        self.gridLayout_5.addWidget(self.plastic_viscosity, 2, 2, 1, 1)
+
+        self.label_31 = QLabel(self.gridLayoutWidget_5)
+        self.label_31.setObjectName(u"label_31")
+
+        self.gridLayout_5.addWidget(self.label_31, 9, 0, 1, 1)
+
+        self.label_34 = QLabel(self.gridLayoutWidget_5)
+        self.label_34.setObjectName(u"label_34")
+
+        self.gridLayout_5.addWidget(self.label_34, 12, 0, 1, 1)
 
         self.label_35 = QLabel(self.gridLayoutWidget_5)
         self.label_35.setObjectName(u"label_35")
 
         self.gridLayout_5.addWidget(self.label_35, 13, 0, 1, 1)
 
-        self.label_26 = QLabel(self.gridLayoutWidget_5)
-        self.label_26.setObjectName(u"label_26")
+        self.pump_pressure = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.pump_pressure.setObjectName(u"pump_pressure")
+        self.pump_pressure.setMaximum(10000.000000000000000)
+        self.pump_pressure.setValue(2950.000000000000000)
 
-        self.gridLayout_5.addWidget(self.label_26, 4, 0, 1, 1)
-
-        self.drill_collar_length = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.drill_collar_length.setObjectName(u"drill_collar_length")
-        self.drill_collar_length.setMaximum(10000.000000000000000)
-        self.drill_collar_length.setValue(650.000000000000000)
-
-        self.gridLayout_5.addWidget(self.drill_collar_length, 11, 1, 1, 1)
+        self.gridLayout_5.addWidget(self.pump_pressure, 13, 2, 1, 1)
 
         self.label_41 = QLabel(self.gridLayoutWidget_5)
         self.label_41.setObjectName(u"label_41")
 
         self.gridLayout_5.addWidget(self.label_41, 19, 0, 1, 1)
 
-        self.label_39 = QLabel(self.gridLayoutWidget_5)
-        self.label_39.setObjectName(u"label_39")
+        self.l_600 = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.l_600.setObjectName(u"l_600")
+        self.l_600.setValue(66.000000000000000)
 
-        self.gridLayout_5.addWidget(self.label_39, 17, 0, 1, 1)
-
-        self.open_hole_length = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.open_hole_length.setObjectName(u"open_hole_length")
-        self.open_hole_length.setMaximum(10000.000000000000000)
-        self.open_hole_length.setValue(3000.000000000000000)
-
-        self.gridLayout_5.addWidget(self.open_hole_length, 6, 1, 1, 1)
-
-        self.label_25 = QLabel(self.gridLayoutWidget_5)
-        self.label_25.setObjectName(u"label_25")
-
-        self.gridLayout_5.addWidget(self.label_25, 3, 0, 1, 1)
-
-        self.pump_output = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.pump_output.setObjectName(u"pump_output")
-        self.pump_output.setMaximum(10000.000000000000000)
-        self.pump_output.setValue(400.000000000000000)
-
-        self.gridLayout_5.addWidget(self.pump_output, 12, 1, 1, 1)
-
-        self.bit_size = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.bit_size.setObjectName(u"bit_size")
-        self.bit_size.setValue(9.880000000000001)
-
-        self.gridLayout_5.addWidget(self.bit_size, 5, 1, 1, 1)
-
-        self.pump_pressure = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.pump_pressure.setObjectName(u"pump_pressure")
-        self.pump_pressure.setMaximum(10000.000000000000000)
-        self.pump_pressure.setValue(2950.000000000000000)
-
-        self.gridLayout_5.addWidget(self.pump_pressure, 13, 1, 1, 1)
-
-        self.casing_length = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.casing_length.setObjectName(u"casing_length")
-        self.casing_length.setMaximum(100000.000000000000000)
-        self.casing_length.setValue(11500.000000000000000)
-
-        self.gridLayout_5.addWidget(self.casing_length, 8, 1, 1, 1)
-
-        self.label_32 = QLabel(self.gridLayoutWidget_5)
-        self.label_32.setObjectName(u"label_32")
-
-        self.gridLayout_5.addWidget(self.label_32, 10, 0, 1, 1)
-
-        self.mud_weight = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.mud_weight.setObjectName(u"mud_weight")
-        self.mud_weight.setValue(12.000000000000000)
-
-        self.gridLayout_5.addWidget(self.mud_weight, 0, 1, 1, 1)
-
-        self.drill_collar_size = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.drill_collar_size.setObjectName(u"drill_collar_size")
-        self.drill_collar_size.setValue(3.000000000000000)
-
-        self.gridLayout_5.addWidget(self.drill_collar_size, 10, 1, 1, 1)
+        self.gridLayout_5.addWidget(self.l_600, 21, 2, 1, 1)
 
         self.label_28 = QLabel(self.gridLayoutWidget_5)
         self.label_28.setObjectName(u"label_28")
 
         self.gridLayout_5.addWidget(self.label_28, 6, 0, 1, 1)
 
-        self.label_22 = QLabel(self.gridLayoutWidget_5)
-        self.label_22.setObjectName(u"label_22")
+        self.drill_collar_size = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.drill_collar_size.setObjectName(u"drill_collar_size")
+        self.drill_collar_size.setValue(3.000000000000000)
 
-        self.gridLayout_5.addWidget(self.label_22, 0, 0, 1, 1)
-
-        self.casing_size = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.casing_size.setObjectName(u"casing_size")
-        self.casing_size.setValue(9.949999999999999)
-
-        self.gridLayout_5.addWidget(self.casing_size, 7, 1, 1, 1)
+        self.gridLayout_5.addWidget(self.drill_collar_size, 10, 2, 1, 1)
 
         self.rate_of_penetration = QDoubleSpinBox(self.gridLayoutWidget_5)
         self.rate_of_penetration.setObjectName(u"rate_of_penetration")
         self.rate_of_penetration.setValue(50.000000000000000)
 
-        self.gridLayout_5.addWidget(self.rate_of_penetration, 15, 1, 1, 1)
+        self.gridLayout_5.addWidget(self.rate_of_penetration, 15, 2, 1, 1)
 
-        self.l_600 = QDoubleSpinBox(self.gridLayoutWidget_5)
-        self.l_600.setObjectName(u"l_600")
-        self.l_600.setValue(66.000000000000000)
+        self.diameter_of_particle = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.diameter_of_particle.setObjectName(u"diameter_of_particle")
+        self.diameter_of_particle.setValue(0.250000000000000)
 
-        self.gridLayout_5.addWidget(self.l_600, 21, 1, 1, 1)
+        self.gridLayout_5.addWidget(self.diameter_of_particle, 17, 2, 1, 1)
+
+        self.label_37 = QLabel(self.gridLayoutWidget_5)
+        self.label_37.setObjectName(u"label_37")
+
+        self.gridLayout_5.addWidget(self.label_37, 15, 0, 1, 1)
+
+        self.open_hole_length = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.open_hole_length.setObjectName(u"open_hole_length")
+        self.open_hole_length.setMaximum(10000.000000000000000)
+        self.open_hole_length.setValue(3000.000000000000000)
+
+        self.gridLayout_5.addWidget(self.open_hole_length, 6, 2, 1, 1)
+
+        self.L_300 = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.L_300.setObjectName(u"L_300")
+        self.L_300.setValue(40.000000000000000)
+
+        self.gridLayout_5.addWidget(self.L_300, 20, 2, 1, 1)
+
+        self.label_26 = QLabel(self.gridLayoutWidget_5)
+        self.label_26.setObjectName(u"label_26")
+
+        self.gridLayout_5.addWidget(self.label_26, 4, 0, 1, 1)
+
+        self.pump_output = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.pump_output.setObjectName(u"pump_output")
+        self.pump_output.setMaximum(10000.000000000000000)
+        self.pump_output.setValue(400.000000000000000)
+
+        self.gridLayout_5.addWidget(self.pump_output, 12, 2, 1, 1)
+
+        self.bit_size = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.bit_size.setObjectName(u"bit_size")
+        self.bit_size.setValue(9.880000000000001)
+
+        self.gridLayout_5.addWidget(self.bit_size, 5, 2, 1, 1)
+
+        self.label_32 = QLabel(self.gridLayoutWidget_5)
+        self.label_32.setObjectName(u"label_32")
+
+        self.gridLayout_5.addWidget(self.label_32, 10, 0, 1, 1)
+
+        self.label_22 = QLabel(self.gridLayoutWidget_5)
+        self.label_22.setObjectName(u"label_22")
+
+        self.gridLayout_5.addWidget(self.label_22, 0, 0, 1, 1)
+
+        self.label_40 = QLabel(self.gridLayoutWidget_5)
+        self.label_40.setObjectName(u"label_40")
+
+        self.gridLayout_5.addWidget(self.label_40, 18, 0, 1, 1)
+
+        self.label_30 = QLabel(self.gridLayoutWidget_5)
+        self.label_30.setObjectName(u"label_30")
+
+        self.gridLayout_5.addWidget(self.label_30, 8, 0, 1, 1)
+
+        self.label_43 = QLabel(self.gridLayoutWidget_5)
+        self.label_43.setObjectName(u"label_43")
+
+        self.gridLayout_5.addWidget(self.label_43, 21, 0, 1, 1)
+
+        self.label_38 = QLabel(self.gridLayoutWidget_5)
+        self.label_38.setObjectName(u"label_38")
+
+        self.gridLayout_5.addWidget(self.label_38, 16, 0, 1, 1)
+
+        self.label_39 = QLabel(self.gridLayoutWidget_5)
+        self.label_39.setObjectName(u"label_39")
+
+        self.gridLayout_5.addWidget(self.label_39, 17, 0, 1, 1)
+
+        self.surface_case = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.surface_case.setObjectName(u"surface_case")
+        self.surface_case.setValue(0.150000000000000)
+
+        self.gridLayout_5.addWidget(self.surface_case, 14, 2, 1, 1)
+
+        self.gel_strength = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.gel_strength.setObjectName(u"gel_strength")
+        self.gel_strength.setValue(8.000000000000000)
+
+        self.gridLayout_5.addWidget(self.gel_strength, 4, 2, 1, 1)
+
+        self.label_36 = QLabel(self.gridLayoutWidget_5)
+        self.label_36.setObjectName(u"label_36")
+
+        self.gridLayout_5.addWidget(self.label_36, 14, 0, 1, 1)
+
+        self.mud_weight = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.mud_weight.setObjectName(u"mud_weight")
+        self.mud_weight.setValue(12.000000000000000)
+
+        self.gridLayout_5.addWidget(self.mud_weight, 0, 2, 1, 1)
+
+        self.label_24 = QLabel(self.gridLayoutWidget_5)
+        self.label_24.setObjectName(u"label_24")
+
+        self.gridLayout_5.addWidget(self.label_24, 2, 0, 1, 1)
+
+        self.prof_total = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.prof_total.setObjectName(u"prof_total")
+        self.prof_total.setMaximum(100000.000000000000000)
+        self.prof_total.setValue(15000.000000000000000)
+
+        self.gridLayout_5.addWidget(self.prof_total, 19, 2, 1, 1)
+
+        self.label_25 = QLabel(self.gridLayoutWidget_5)
+        self.label_25.setObjectName(u"label_25")
+
+        self.gridLayout_5.addWidget(self.label_25, 3, 0, 1, 1)
+
+        self.casing_size = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.casing_size.setObjectName(u"casing_size")
+        self.casing_size.setValue(9.949999999999999)
+
+        self.gridLayout_5.addWidget(self.casing_size, 7, 2, 1, 1)
+
+        self.drill_collar_length = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.drill_collar_length.setObjectName(u"drill_collar_length")
+        self.drill_collar_length.setMaximum(10000.000000000000000)
+        self.drill_collar_length.setValue(650.000000000000000)
+
+        self.gridLayout_5.addWidget(self.drill_collar_length, 11, 2, 1, 1)
+
+        self.solid_sg = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.solid_sg.setObjectName(u"solid_sg")
+        self.solid_sg.setValue(3.820000000000000)
+
+        self.gridLayout_5.addWidget(self.solid_sg, 1, 2, 1, 1)
+
+        self.fracture_gradient = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.fracture_gradient.setObjectName(u"fracture_gradient")
+        self.fracture_gradient.setValue(14.000000000000000)
+
+        self.gridLayout_5.addWidget(self.fracture_gradient, 18, 2, 1, 1)
+
+        self.bit_size_alt = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.bit_size_alt.setObjectName(u"bit_size_alt")
+        self.bit_size_alt.setValue(12.000000000000000)
+
+        self.gridLayout_5.addWidget(self.bit_size_alt, 5, 1, 1, 1)
+
+        self.casing_size_alt = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.casing_size_alt.setObjectName(u"casing_size_alt")
+        self.casing_size_alt.setValue(10.750000000000000)
+
+        self.gridLayout_5.addWidget(self.casing_size_alt, 7, 1, 1, 1)
+
+        self.casing_length_alt = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.casing_length_alt.setObjectName(u"casing_length_alt")
+        self.casing_length_alt.setMaximum(50000.000000000000000)
+        self.casing_length_alt.setValue(12000.000000000000000)
+
+        self.gridLayout_5.addWidget(self.casing_length_alt, 8, 1, 1, 1)
+
+        self.drill_pipe_size_alt = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.drill_pipe_size_alt.setObjectName(u"drill_pipe_size_alt")
+        self.drill_pipe_size_alt.setValue(5.000000000000000)
+
+        self.gridLayout_5.addWidget(self.drill_pipe_size_alt, 9, 1, 1, 1)
+
+        self.drill_collar_size_alt = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.drill_collar_size_alt.setObjectName(u"drill_collar_size_alt")
+        self.drill_collar_size_alt.setValue(8.000000000000000)
+
+        self.gridLayout_5.addWidget(self.drill_collar_size_alt, 10, 1, 1, 1)
 
         self.gridLayoutWidget_6 = QWidget(self.scrollAreaWidgetContents)
         self.gridLayoutWidget_6.setObjectName(u"gridLayoutWidget_6")
@@ -2368,28 +2399,28 @@ class Ui_MainWindow(object):
         self.label_19.setText("")
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"Se considera un valor de E constante = 0.000053 [ADIM] de acuerdo al equipo superficial", None))
         self.label_21.setText(QCoreApplication.translate("MainWindow", u"Caida de Presi\u00f3n Total en el Sistema y ECD", None))
-        self.label_24.setText(QCoreApplication.translate("MainWindow", u"Plastic Viscosity", None))
-        self.label_30.setText(QCoreApplication.translate("MainWindow", u"Casing length", None))
-        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Bit Size", None))
-        self.label_38.setText(QCoreApplication.translate("MainWindow", u"Density of Particle", None))
-        self.label_34.setText(QCoreApplication.translate("MainWindow", u"Pump Output", None))
-        self.label_40.setText(QCoreApplication.translate("MainWindow", u"Fracture Gradient", None))
         self.label_33.setText(QCoreApplication.translate("MainWindow", u"Drill Collar Length", None))
         self.label_29.setText(QCoreApplication.translate("MainWindow", u"Casing Size", None))
-        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Rate of Penetration", None))
-        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Drill Pipe Size", None))
-        self.label_43.setText(QCoreApplication.translate("MainWindow", u"L600", None))
-        self.label_36.setText(QCoreApplication.translate("MainWindow", u"Surface Case", None))
-        self.label_42.setText(QCoreApplication.translate("MainWindow", u"L300", None))
         self.label_23.setText(QCoreApplication.translate("MainWindow", u"Solid SG", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"L300", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Bit Size", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Drill Pipe Size", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"Pump Output", None))
         self.label_35.setText(QCoreApplication.translate("MainWindow", u"Pump Pressure", None))
-        self.label_26.setText(QCoreApplication.translate("MainWindow", u"Gel strength", None))
         self.label_41.setText(QCoreApplication.translate("MainWindow", u"Prof Total", None))
-        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Diameter of Particle", None))
-        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Yield Point", None))
-        self.label_32.setText(QCoreApplication.translate("MainWindow", u"Drill Collar Size", None))
         self.label_28.setText(QCoreApplication.translate("MainWindow", u"Open Hole Length", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Rate of Penetration", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"Gel strength", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"Drill Collar Size", None))
         self.label_22.setText(QCoreApplication.translate("MainWindow", u"Mud Weight", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"Fracture Gradient", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"Casing length", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"L600", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"Density of Particle", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Diameter of Particle", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"Surface Case", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"Plastic Viscosity", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Yield Point", None))
         self.label_44.setText(QCoreApplication.translate("MainWindow", u"Psup", None))
         self.label_45.setText(QCoreApplication.translate("MainWindow", u"Sarta", None))
         ___qtablewidgetitem73 = self.drill_pipe_table.horizontalHeaderItem(0)

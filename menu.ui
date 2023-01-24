@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1303</width>
-    <height>947</height>
+    <width>1295</width>
+    <height>929</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -406,7 +406,7 @@ font:75 12pt *Arial Narrow*;
              <string notr="true">background-color: rgb(255, 255, 255);</string>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>3</number>
             </property>
             <widget class="QWidget" name="page">
              <widget class="PlotWidget" name="RM_Widget" native="true">
@@ -2263,73 +2263,13 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                  </rect>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_5">
-                 <item row="2" column="0">
-                  <widget class="QLabel" name="label_24">
-                   <property name="text">
-                    <string>Plastic Viscosity</string>
+                 <item row="8" column="2">
+                  <widget class="QDoubleSpinBox" name="casing_length">
+                   <property name="maximum">
+                    <double>100000.000000000000000</double>
                    </property>
-                  </widget>
-                 </item>
-                 <item row="8" column="0">
-                  <widget class="QLabel" name="label_30">
-                   <property name="text">
-                    <string>Casing length</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="9" column="1">
-                  <widget class="QDoubleSpinBox" name="drill_pipe_size">
                    <property name="value">
-                    <double>4.280000000000000</double>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="18" column="1">
-                  <widget class="QDoubleSpinBox" name="fracture_gradient">
-                   <property name="value">
-                    <double>14.000000000000000</double>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="20" column="1">
-                  <widget class="QDoubleSpinBox" name="L_300">
-                   <property name="value">
-                    <double>40.000000000000000</double>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="5" column="0">
-                  <widget class="QLabel" name="label_27">
-                   <property name="text">
-                    <string>Bit Size</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="16" column="0">
-                  <widget class="QLabel" name="label_38">
-                   <property name="text">
-                    <string>Density of Particle</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="12" column="0">
-                  <widget class="QLabel" name="label_34">
-                   <property name="text">
-                    <string>Pump Output</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="18" column="0">
-                  <widget class="QLabel" name="label_40">
-                   <property name="text">
-                    <string>Fracture Gradient</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="3" column="1">
-                  <widget class="QDoubleSpinBox" name="yield_point">
-                   <property name="value">
-                    <double>14.000000000000000</double>
+                    <double>11500.000000000000000</double>
                    </property>
                   </widget>
                  </item>
@@ -2347,90 +2287,10 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                    </property>
                   </widget>
                  </item>
-                 <item row="2" column="1">
-                  <widget class="QDoubleSpinBox" name="plastic_viscosity">
+                 <item row="9" column="2">
+                  <widget class="QDoubleSpinBox" name="drill_pipe_size">
                    <property name="value">
-                    <double>26.000000000000000</double>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="1">
-                  <widget class="QDoubleSpinBox" name="solid_sg">
-                   <property name="value">
-                    <double>3.820000000000000</double>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="17" column="1">
-                  <widget class="QDoubleSpinBox" name="diameter_of_particle">
-                   <property name="value">
-                    <double>0.250000000000000</double>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="19" column="1">
-                  <widget class="QDoubleSpinBox" name="prof_total">
-                   <property name="maximum">
-                    <double>100000.000000000000000</double>
-                   </property>
-                   <property name="value">
-                    <double>15000.000000000000000</double>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="15" column="0">
-                  <widget class="QLabel" name="label_37">
-                   <property name="text">
-                    <string>Rate of Penetration</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="9" column="0">
-                  <widget class="QLabel" name="label_31">
-                   <property name="text">
-                    <string>Drill Pipe Size</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="21" column="0">
-                  <widget class="QLabel" name="label_43">
-                   <property name="text">
-                    <string>L600</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="14" column="0">
-                  <widget class="QLabel" name="label_36">
-                   <property name="text">
-                    <string>Surface Case</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="14" column="1">
-                  <widget class="QDoubleSpinBox" name="surface_case">
-                   <property name="value">
-                    <double>0.150000000000000</double>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="4" column="1">
-                  <widget class="QDoubleSpinBox" name="gel_strength">
-                   <property name="value">
-                    <double>8.000000000000000</double>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="20" column="0">
-                  <widget class="QLabel" name="label_42">
-                   <property name="text">
-                    <string>L300</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="16" column="1">
-                  <widget class="QDoubleSpinBox" name="density_of_particle">
-                   <property name="value">
-                    <double>22.000000000000000</double>
+                    <double>4.280000000000000</double>
                    </property>
                   </widget>
                  </item>
@@ -2441,6 +2301,55 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                    </property>
                   </widget>
                  </item>
+                 <item row="20" column="0">
+                  <widget class="QLabel" name="label_42">
+                   <property name="text">
+                    <string>L300</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="16" column="2">
+                  <widget class="QDoubleSpinBox" name="density_of_particle">
+                   <property name="value">
+                    <double>22.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QDoubleSpinBox" name="yield_point">
+                   <property name="value">
+                    <double>14.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QLabel" name="label_27">
+                   <property name="text">
+                    <string>Bit Size</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QDoubleSpinBox" name="plastic_viscosity">
+                   <property name="value">
+                    <double>26.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="0">
+                  <widget class="QLabel" name="label_31">
+                   <property name="text">
+                    <string>Drill Pipe Size</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="0">
+                  <widget class="QLabel" name="label_34">
+                   <property name="text">
+                    <string>Pump Output</string>
+                   </property>
+                  </widget>
+                 </item>
                  <item row="13" column="0">
                   <widget class="QLabel" name="label_35">
                    <property name="text">
@@ -2448,20 +2357,13 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                    </property>
                   </widget>
                  </item>
-                 <item row="4" column="0">
-                  <widget class="QLabel" name="label_26">
-                   <property name="text">
-                    <string>Gel strength</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="11" column="1">
-                  <widget class="QDoubleSpinBox" name="drill_collar_length">
+                 <item row="13" column="2">
+                  <widget class="QDoubleSpinBox" name="pump_pressure">
                    <property name="maximum">
                     <double>10000.000000000000000</double>
                    </property>
                    <property name="value">
-                    <double>650.000000000000000</double>
+                    <double>2950.000000000000000</double>
                    </property>
                   </widget>
                  </item>
@@ -2472,85 +2374,10 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                    </property>
                   </widget>
                  </item>
-                 <item row="17" column="0">
-                  <widget class="QLabel" name="label_39">
-                   <property name="text">
-                    <string>Diameter of Particle</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="6" column="1">
-                  <widget class="QDoubleSpinBox" name="open_hole_length">
-                   <property name="maximum">
-                    <double>10000.000000000000000</double>
-                   </property>
+                 <item row="21" column="2">
+                  <widget class="QDoubleSpinBox" name="l_600">
                    <property name="value">
-                    <double>3000.000000000000000</double>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="3" column="0">
-                  <widget class="QLabel" name="label_25">
-                   <property name="text">
-                    <string>Yield Point</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="12" column="1">
-                  <widget class="QDoubleSpinBox" name="pump_output">
-                   <property name="maximum">
-                    <double>10000.000000000000000</double>
-                   </property>
-                   <property name="value">
-                    <double>400.000000000000000</double>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="5" column="1">
-                  <widget class="QDoubleSpinBox" name="bit_size">
-                   <property name="value">
-                    <double>9.880000000000001</double>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="13" column="1">
-                  <widget class="QDoubleSpinBox" name="pump_pressure">
-                   <property name="maximum">
-                    <double>10000.000000000000000</double>
-                   </property>
-                   <property name="value">
-                    <double>2950.000000000000000</double>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="8" column="1">
-                  <widget class="QDoubleSpinBox" name="casing_length">
-                   <property name="maximum">
-                    <double>100000.000000000000000</double>
-                   </property>
-                   <property name="value">
-                    <double>11500.000000000000000</double>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="10" column="0">
-                  <widget class="QLabel" name="label_32">
-                   <property name="text">
-                    <string>Drill Collar Size</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="0" column="1">
-                  <widget class="QDoubleSpinBox" name="mud_weight">
-                   <property name="value">
-                    <double>12.000000000000000</double>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="10" column="1">
-                  <widget class="QDoubleSpinBox" name="drill_collar_size">
-                   <property name="value">
-                    <double>3.000000000000000</double>
+                    <double>66.000000000000000</double>
                    </property>
                   </widget>
                  </item>
@@ -2561,6 +2388,82 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                    </property>
                   </widget>
                  </item>
+                 <item row="10" column="2">
+                  <widget class="QDoubleSpinBox" name="drill_collar_size">
+                   <property name="value">
+                    <double>3.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="15" column="2">
+                  <widget class="QDoubleSpinBox" name="rate_of_penetration">
+                   <property name="value">
+                    <double>50.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="17" column="2">
+                  <widget class="QDoubleSpinBox" name="diameter_of_particle">
+                   <property name="value">
+                    <double>0.250000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="15" column="0">
+                  <widget class="QLabel" name="label_37">
+                   <property name="text">
+                    <string>Rate of Penetration</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="2">
+                  <widget class="QDoubleSpinBox" name="open_hole_length">
+                   <property name="maximum">
+                    <double>10000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>3000.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="20" column="2">
+                  <widget class="QDoubleSpinBox" name="L_300">
+                   <property name="value">
+                    <double>40.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="label_26">
+                   <property name="text">
+                    <string>Gel strength</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="12" column="2">
+                  <widget class="QDoubleSpinBox" name="pump_output">
+                   <property name="maximum">
+                    <double>10000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>400.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="2">
+                  <widget class="QDoubleSpinBox" name="bit_size">
+                   <property name="value">
+                    <double>9.880000000000001</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="0">
+                  <widget class="QLabel" name="label_32">
+                   <property name="text">
+                    <string>Drill Collar Size</string>
+                   </property>
+                  </widget>
+                 </item>
                  <item row="0" column="0">
                   <widget class="QLabel" name="label_22">
                    <property name="text">
@@ -2568,24 +2471,159 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                    </property>
                   </widget>
                  </item>
-                 <item row="7" column="1">
+                 <item row="18" column="0">
+                  <widget class="QLabel" name="label_40">
+                   <property name="text">
+                    <string>Fracture Gradient</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="0">
+                  <widget class="QLabel" name="label_30">
+                   <property name="text">
+                    <string>Casing length</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="21" column="0">
+                  <widget class="QLabel" name="label_43">
+                   <property name="text">
+                    <string>L600</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="16" column="0">
+                  <widget class="QLabel" name="label_38">
+                   <property name="text">
+                    <string>Density of Particle</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="17" column="0">
+                  <widget class="QLabel" name="label_39">
+                   <property name="text">
+                    <string>Diameter of Particle</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="14" column="2">
+                  <widget class="QDoubleSpinBox" name="surface_case">
+                   <property name="value">
+                    <double>0.150000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="2">
+                  <widget class="QDoubleSpinBox" name="gel_strength">
+                   <property name="value">
+                    <double>8.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="14" column="0">
+                  <widget class="QLabel" name="label_36">
+                   <property name="text">
+                    <string>Surface Case</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QDoubleSpinBox" name="mud_weight">
+                   <property name="value">
+                    <double>12.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_24">
+                   <property name="text">
+                    <string>Plastic Viscosity</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="19" column="2">
+                  <widget class="QDoubleSpinBox" name="prof_total">
+                   <property name="maximum">
+                    <double>100000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>15000.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_25">
+                   <property name="text">
+                    <string>Yield Point</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="2">
                   <widget class="QDoubleSpinBox" name="casing_size">
                    <property name="value">
                     <double>9.949999999999999</double>
                    </property>
                   </widget>
                  </item>
-                 <item row="15" column="1">
-                  <widget class="QDoubleSpinBox" name="rate_of_penetration">
+                 <item row="11" column="2">
+                  <widget class="QDoubleSpinBox" name="drill_collar_length">
+                   <property name="maximum">
+                    <double>10000.000000000000000</double>
+                   </property>
                    <property name="value">
-                    <double>50.000000000000000</double>
+                    <double>650.000000000000000</double>
                    </property>
                   </widget>
                  </item>
-                 <item row="21" column="1">
-                  <widget class="QDoubleSpinBox" name="l_600">
+                 <item row="1" column="2">
+                  <widget class="QDoubleSpinBox" name="solid_sg">
                    <property name="value">
-                    <double>66.000000000000000</double>
+                    <double>3.820000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="18" column="2">
+                  <widget class="QDoubleSpinBox" name="fracture_gradient">
+                   <property name="value">
+                    <double>14.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="1">
+                  <widget class="QDoubleSpinBox" name="bit_size_alt">
+                   <property name="value">
+                    <double>12.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="1">
+                  <widget class="QDoubleSpinBox" name="casing_size_alt">
+                   <property name="value">
+                    <double>10.750000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="1">
+                  <widget class="QDoubleSpinBox" name="casing_length_alt">
+                   <property name="maximum">
+                    <double>50000.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>12000.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="1">
+                  <widget class="QDoubleSpinBox" name="drill_pipe_size_alt">
+                   <property name="value">
+                    <double>5.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="1">
+                  <widget class="QDoubleSpinBox" name="drill_collar_size_alt">
+                   <property name="value">
+                    <double>8.000000000000000</double>
                    </property>
                   </widget>
                  </item>

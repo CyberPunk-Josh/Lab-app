@@ -112,3 +112,28 @@ class HidraulicFunctions:
     def rep1(vp1, dpz, mw, visc_e1, alfa):
         rep1_value = round((928 * vp1 * dpz * mw) / (visc_e1 * alfa), 3)
         return rep1_value
+
+    # ReL
+    def re_l(np):
+        rel_value = round(3470 - 1370 * np, 3)
+        return rel_value
+
+    # ReT
+    def re_t(np):
+        ret_value = round(4270 - 1370 * np, 3)
+        return ret_value
+
+    # fp1
+    def fp_1(np, rep1):
+        fp1_value = round(((math.log(np, 10) + 3.93) / 50) / (pow(rep1, (1.75 - math.log(np, 10)) / 7)), 4)
+        return fp1_value
+
+    # Ppipe
+    def p_pipe(fp1, vp1, mw, dpz, pf, dcl):
+        ppipe_value = round(((fp1 * pow(vp1, 2) * mw) / (25.8 * dpz)) * (pf - dcl) , 3)
+        return ppipe_value
+
+    # Ppipe_collar
+    def p_pipe_collar(fp1, vp1, mw, dpz, dcl):
+        ppipe_value = round(((fp1 * pow(vp1, 2) * mw) / (25.8 * dpz)) * dcl, 3)
+        return ppipe_value
