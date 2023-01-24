@@ -6,6 +6,7 @@ from PySide6.QtCore import Qt, QEasingCurve
 from reologicalOne.reological import RModel
 from reologicalTwo.reologicalDB import RModelDB
 from density.density import Density
+from hidraulic.hidraulic import Hidraulic
 
 
 import sys
@@ -28,6 +29,7 @@ class MiApp(QMainWindow, Ui_MainWindow):
         self.bt_inicio.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page))
         self.bt_uno.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_uno))
         self.bt_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_dos))
+        self.bt_3.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_tres))
 
         # control barra de titulos
         self.bt_minimizar.clicked.connect(self.control_bt_minimizar)
@@ -74,7 +76,7 @@ class MiApp(QMainWindow, Ui_MainWindow):
             self.showNormal()
 
 
-class Global(Density, RModelDB, RModel, MiApp):
+class Global(Hidraulic, Density, RModelDB, RModel, MiApp):
     def __init__(self):
         super().__init__()
 

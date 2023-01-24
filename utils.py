@@ -1,3 +1,6 @@
+import math
+
+
 class FluidFunctions:
     # Function to calculate velocity inside a pipeline
     def vel(Q, Di):
@@ -71,3 +74,41 @@ class FluidFunctions:
     def equivalent_density(pf, pa, h):
         DEC = round(pf + ((0.704 * pa) / h), 4)
         return DEC
+
+
+class HidraulicFunctions:
+    # Function to calculate Psup
+    def p_sup(sc, mw, po):
+        psup = round(sc * mw * (pow(po / 100, 1.86)), 3)
+        return psup
+
+    # Drill Pipe functions
+    # VP1
+    def v_p1(po, dpz):
+        vp1 = round((0.408 * po) / (pow(dpz, 2)), 3)
+        return vp1
+
+    # np
+    def np(l600, l300):
+        np_value = round(3.32 * math.log(l600 / l300, 10), 3)
+        return np_value
+
+    # kp
+    def kp(l600, np):
+        kp_value = round((5.11 * l600)/(pow(1022, np)), 3)
+        return kp_value
+
+    # VisE1
+    def vis_e1(kp, vp1, dpz, np):
+        visc_value = round(100 * kp * (pow((96 * vp1) / dpz, np - 1)), 3)
+        return visc_value
+
+    # Alfa
+    def alfa(np):
+        alfa_value = round(pow(((3 * np + 1) / (4 * np)), np), 3)
+        return alfa_value
+
+    # Rep1
+    def rep1(vp1, dpz, mw, visc_e1, alfa):
+        rep1_value = round((928 * vp1 * dpz * mw) / (visc_e1 * alfa), 3)
+        return rep1_value

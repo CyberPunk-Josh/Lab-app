@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'menuHIDrhc.ui'
+## Form generated from reading UI file 'menubIAewU.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.3
 ##
@@ -19,7 +19,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1250, 950)
+        MainWindow.resize(1303, 947)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -157,6 +157,12 @@ class Ui_MainWindow(object):
         self.bt_2.setIconSize(QSize(32, 32))
 
         self.verticalLayout_3.addWidget(self.bt_2)
+
+        self.bt_3 = QPushButton(self.frame_lateral)
+        self.bt_3.setObjectName(u"bt_3")
+        self.bt_3.setMinimumSize(QSize(0, 40))
+
+        self.verticalLayout_3.addWidget(self.bt_3)
 
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
@@ -1337,9 +1343,781 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.page_dos)
         self.page_tres = QWidget()
         self.page_tres.setObjectName(u"page_tres")
-        self.pushButton_4 = QPushButton(self.page_tres)
-        self.pushButton_4.setObjectName(u"pushButton_4")
-        self.pushButton_4.setGeometry(QRect(180, 170, 221, 141))
+        self.scrollArea = QScrollArea(self.page_tres)
+        self.scrollArea.setObjectName(u"scrollArea")
+        self.scrollArea.setGeometry(QRect(0, 0, 1331, 911))
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollAreaWidgetContents = QWidget()
+        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 1329, 909))
+        self.label_21 = QLabel(self.scrollAreaWidgetContents)
+        self.label_21.setObjectName(u"label_21")
+        self.label_21.setGeometry(QRect(40, 10, 401, 31))
+        font2 = QFont()
+        font2.setPointSize(15)
+        self.label_21.setFont(font2)
+        self.gridLayoutWidget_5 = QWidget(self.scrollAreaWidgetContents)
+        self.gridLayoutWidget_5.setObjectName(u"gridLayoutWidget_5")
+        self.gridLayoutWidget_5.setGeometry(QRect(30, 40, 401, 781))
+        self.gridLayout_5 = QGridLayout(self.gridLayoutWidget_5)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.label_24 = QLabel(self.gridLayoutWidget_5)
+        self.label_24.setObjectName(u"label_24")
+
+        self.gridLayout_5.addWidget(self.label_24, 2, 0, 1, 1)
+
+        self.label_30 = QLabel(self.gridLayoutWidget_5)
+        self.label_30.setObjectName(u"label_30")
+
+        self.gridLayout_5.addWidget(self.label_30, 8, 0, 1, 1)
+
+        self.drill_pipe_size = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.drill_pipe_size.setObjectName(u"drill_pipe_size")
+        self.drill_pipe_size.setValue(4.280000000000000)
+
+        self.gridLayout_5.addWidget(self.drill_pipe_size, 9, 1, 1, 1)
+
+        self.fracture_gradient = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.fracture_gradient.setObjectName(u"fracture_gradient")
+        self.fracture_gradient.setValue(14.000000000000000)
+
+        self.gridLayout_5.addWidget(self.fracture_gradient, 18, 1, 1, 1)
+
+        self.L_300 = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.L_300.setObjectName(u"L_300")
+        self.L_300.setValue(40.000000000000000)
+
+        self.gridLayout_5.addWidget(self.L_300, 20, 1, 1, 1)
+
+        self.label_27 = QLabel(self.gridLayoutWidget_5)
+        self.label_27.setObjectName(u"label_27")
+
+        self.gridLayout_5.addWidget(self.label_27, 5, 0, 1, 1)
+
+        self.label_38 = QLabel(self.gridLayoutWidget_5)
+        self.label_38.setObjectName(u"label_38")
+
+        self.gridLayout_5.addWidget(self.label_38, 16, 0, 1, 1)
+
+        self.label_34 = QLabel(self.gridLayoutWidget_5)
+        self.label_34.setObjectName(u"label_34")
+
+        self.gridLayout_5.addWidget(self.label_34, 12, 0, 1, 1)
+
+        self.label_40 = QLabel(self.gridLayoutWidget_5)
+        self.label_40.setObjectName(u"label_40")
+
+        self.gridLayout_5.addWidget(self.label_40, 18, 0, 1, 1)
+
+        self.yield_point = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.yield_point.setObjectName(u"yield_point")
+        self.yield_point.setValue(14.000000000000000)
+
+        self.gridLayout_5.addWidget(self.yield_point, 3, 1, 1, 1)
+
+        self.label_33 = QLabel(self.gridLayoutWidget_5)
+        self.label_33.setObjectName(u"label_33")
+
+        self.gridLayout_5.addWidget(self.label_33, 11, 0, 1, 1)
+
+        self.label_29 = QLabel(self.gridLayoutWidget_5)
+        self.label_29.setObjectName(u"label_29")
+
+        self.gridLayout_5.addWidget(self.label_29, 7, 0, 1, 1)
+
+        self.plastic_viscosity = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.plastic_viscosity.setObjectName(u"plastic_viscosity")
+        self.plastic_viscosity.setValue(26.000000000000000)
+
+        self.gridLayout_5.addWidget(self.plastic_viscosity, 2, 1, 1, 1)
+
+        self.solid_sg = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.solid_sg.setObjectName(u"solid_sg")
+        self.solid_sg.setValue(3.820000000000000)
+
+        self.gridLayout_5.addWidget(self.solid_sg, 1, 1, 1, 1)
+
+        self.diameter_of_particle = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.diameter_of_particle.setObjectName(u"diameter_of_particle")
+        self.diameter_of_particle.setValue(0.250000000000000)
+
+        self.gridLayout_5.addWidget(self.diameter_of_particle, 17, 1, 1, 1)
+
+        self.prof_total = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.prof_total.setObjectName(u"prof_total")
+        self.prof_total.setMaximum(100000.000000000000000)
+        self.prof_total.setValue(15000.000000000000000)
+
+        self.gridLayout_5.addWidget(self.prof_total, 19, 1, 1, 1)
+
+        self.label_37 = QLabel(self.gridLayoutWidget_5)
+        self.label_37.setObjectName(u"label_37")
+
+        self.gridLayout_5.addWidget(self.label_37, 15, 0, 1, 1)
+
+        self.label_31 = QLabel(self.gridLayoutWidget_5)
+        self.label_31.setObjectName(u"label_31")
+
+        self.gridLayout_5.addWidget(self.label_31, 9, 0, 1, 1)
+
+        self.label_43 = QLabel(self.gridLayoutWidget_5)
+        self.label_43.setObjectName(u"label_43")
+
+        self.gridLayout_5.addWidget(self.label_43, 21, 0, 1, 1)
+
+        self.label_36 = QLabel(self.gridLayoutWidget_5)
+        self.label_36.setObjectName(u"label_36")
+
+        self.gridLayout_5.addWidget(self.label_36, 14, 0, 1, 1)
+
+        self.surface_case = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.surface_case.setObjectName(u"surface_case")
+        self.surface_case.setValue(0.150000000000000)
+
+        self.gridLayout_5.addWidget(self.surface_case, 14, 1, 1, 1)
+
+        self.gel_strength = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.gel_strength.setObjectName(u"gel_strength")
+        self.gel_strength.setValue(8.000000000000000)
+
+        self.gridLayout_5.addWidget(self.gel_strength, 4, 1, 1, 1)
+
+        self.label_42 = QLabel(self.gridLayoutWidget_5)
+        self.label_42.setObjectName(u"label_42")
+
+        self.gridLayout_5.addWidget(self.label_42, 20, 0, 1, 1)
+
+        self.density_of_particle = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.density_of_particle.setObjectName(u"density_of_particle")
+        self.density_of_particle.setValue(22.000000000000000)
+
+        self.gridLayout_5.addWidget(self.density_of_particle, 16, 1, 1, 1)
+
+        self.label_23 = QLabel(self.gridLayoutWidget_5)
+        self.label_23.setObjectName(u"label_23")
+
+        self.gridLayout_5.addWidget(self.label_23, 1, 0, 1, 1)
+
+        self.label_35 = QLabel(self.gridLayoutWidget_5)
+        self.label_35.setObjectName(u"label_35")
+
+        self.gridLayout_5.addWidget(self.label_35, 13, 0, 1, 1)
+
+        self.label_26 = QLabel(self.gridLayoutWidget_5)
+        self.label_26.setObjectName(u"label_26")
+
+        self.gridLayout_5.addWidget(self.label_26, 4, 0, 1, 1)
+
+        self.drill_collar_length = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.drill_collar_length.setObjectName(u"drill_collar_length")
+        self.drill_collar_length.setMaximum(10000.000000000000000)
+        self.drill_collar_length.setValue(650.000000000000000)
+
+        self.gridLayout_5.addWidget(self.drill_collar_length, 11, 1, 1, 1)
+
+        self.label_41 = QLabel(self.gridLayoutWidget_5)
+        self.label_41.setObjectName(u"label_41")
+
+        self.gridLayout_5.addWidget(self.label_41, 19, 0, 1, 1)
+
+        self.label_39 = QLabel(self.gridLayoutWidget_5)
+        self.label_39.setObjectName(u"label_39")
+
+        self.gridLayout_5.addWidget(self.label_39, 17, 0, 1, 1)
+
+        self.open_hole_length = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.open_hole_length.setObjectName(u"open_hole_length")
+        self.open_hole_length.setMaximum(10000.000000000000000)
+        self.open_hole_length.setValue(3000.000000000000000)
+
+        self.gridLayout_5.addWidget(self.open_hole_length, 6, 1, 1, 1)
+
+        self.label_25 = QLabel(self.gridLayoutWidget_5)
+        self.label_25.setObjectName(u"label_25")
+
+        self.gridLayout_5.addWidget(self.label_25, 3, 0, 1, 1)
+
+        self.pump_output = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.pump_output.setObjectName(u"pump_output")
+        self.pump_output.setMaximum(10000.000000000000000)
+        self.pump_output.setValue(400.000000000000000)
+
+        self.gridLayout_5.addWidget(self.pump_output, 12, 1, 1, 1)
+
+        self.bit_size = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.bit_size.setObjectName(u"bit_size")
+        self.bit_size.setValue(9.880000000000001)
+
+        self.gridLayout_5.addWidget(self.bit_size, 5, 1, 1, 1)
+
+        self.pump_pressure = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.pump_pressure.setObjectName(u"pump_pressure")
+        self.pump_pressure.setMaximum(10000.000000000000000)
+        self.pump_pressure.setValue(2950.000000000000000)
+
+        self.gridLayout_5.addWidget(self.pump_pressure, 13, 1, 1, 1)
+
+        self.casing_length = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.casing_length.setObjectName(u"casing_length")
+        self.casing_length.setMaximum(100000.000000000000000)
+        self.casing_length.setValue(11500.000000000000000)
+
+        self.gridLayout_5.addWidget(self.casing_length, 8, 1, 1, 1)
+
+        self.label_32 = QLabel(self.gridLayoutWidget_5)
+        self.label_32.setObjectName(u"label_32")
+
+        self.gridLayout_5.addWidget(self.label_32, 10, 0, 1, 1)
+
+        self.mud_weight = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.mud_weight.setObjectName(u"mud_weight")
+        self.mud_weight.setValue(12.000000000000000)
+
+        self.gridLayout_5.addWidget(self.mud_weight, 0, 1, 1, 1)
+
+        self.drill_collar_size = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.drill_collar_size.setObjectName(u"drill_collar_size")
+        self.drill_collar_size.setValue(3.000000000000000)
+
+        self.gridLayout_5.addWidget(self.drill_collar_size, 10, 1, 1, 1)
+
+        self.label_28 = QLabel(self.gridLayoutWidget_5)
+        self.label_28.setObjectName(u"label_28")
+
+        self.gridLayout_5.addWidget(self.label_28, 6, 0, 1, 1)
+
+        self.label_22 = QLabel(self.gridLayoutWidget_5)
+        self.label_22.setObjectName(u"label_22")
+
+        self.gridLayout_5.addWidget(self.label_22, 0, 0, 1, 1)
+
+        self.casing_size = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.casing_size.setObjectName(u"casing_size")
+        self.casing_size.setValue(9.949999999999999)
+
+        self.gridLayout_5.addWidget(self.casing_size, 7, 1, 1, 1)
+
+        self.rate_of_penetration = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.rate_of_penetration.setObjectName(u"rate_of_penetration")
+        self.rate_of_penetration.setValue(50.000000000000000)
+
+        self.gridLayout_5.addWidget(self.rate_of_penetration, 15, 1, 1, 1)
+
+        self.l_600 = QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.l_600.setObjectName(u"l_600")
+        self.l_600.setValue(66.000000000000000)
+
+        self.gridLayout_5.addWidget(self.l_600, 21, 1, 1, 1)
+
+        self.gridLayoutWidget_6 = QWidget(self.scrollAreaWidgetContents)
+        self.gridLayoutWidget_6.setObjectName(u"gridLayoutWidget_6")
+        self.gridLayoutWidget_6.setGeometry(QRect(1090, 40, 160, 64))
+        self.gridLayout_6 = QGridLayout(self.gridLayoutWidget_6)
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.gridLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.label_44 = QLabel(self.gridLayoutWidget_6)
+        self.label_44.setObjectName(u"label_44")
+
+        self.gridLayout_6.addWidget(self.label_44, 0, 0, 1, 1)
+
+        self.p_sup = QDoubleSpinBox(self.gridLayoutWidget_6)
+        self.p_sup.setObjectName(u"p_sup")
+
+        self.gridLayout_6.addWidget(self.p_sup, 0, 1, 1, 1)
+
+        self.label_45 = QLabel(self.gridLayoutWidget_6)
+        self.label_45.setObjectName(u"label_45")
+
+        self.gridLayout_6.addWidget(self.label_45, 1, 0, 1, 1)
+
+        self.sarta = QDoubleSpinBox(self.gridLayoutWidget_6)
+        self.sarta.setObjectName(u"sarta")
+
+        self.gridLayout_6.addWidget(self.sarta, 1, 1, 1, 1)
+
+        self.drill_pipe_table = QTableWidget(self.scrollAreaWidgetContents)
+        if (self.drill_pipe_table.columnCount() < 1):
+            self.drill_pipe_table.setColumnCount(1)
+        __qtablewidgetitem73 = QTableWidgetItem()
+        self.drill_pipe_table.setHorizontalHeaderItem(0, __qtablewidgetitem73)
+        if (self.drill_pipe_table.rowCount() < 10):
+            self.drill_pipe_table.setRowCount(10)
+        __qtablewidgetitem74 = QTableWidgetItem()
+        self.drill_pipe_table.setVerticalHeaderItem(0, __qtablewidgetitem74)
+        __qtablewidgetitem75 = QTableWidgetItem()
+        self.drill_pipe_table.setVerticalHeaderItem(1, __qtablewidgetitem75)
+        __qtablewidgetitem76 = QTableWidgetItem()
+        self.drill_pipe_table.setVerticalHeaderItem(2, __qtablewidgetitem76)
+        __qtablewidgetitem77 = QTableWidgetItem()
+        self.drill_pipe_table.setVerticalHeaderItem(3, __qtablewidgetitem77)
+        __qtablewidgetitem78 = QTableWidgetItem()
+        self.drill_pipe_table.setVerticalHeaderItem(4, __qtablewidgetitem78)
+        __qtablewidgetitem79 = QTableWidgetItem()
+        self.drill_pipe_table.setVerticalHeaderItem(5, __qtablewidgetitem79)
+        __qtablewidgetitem80 = QTableWidgetItem()
+        self.drill_pipe_table.setVerticalHeaderItem(6, __qtablewidgetitem80)
+        __qtablewidgetitem81 = QTableWidgetItem()
+        self.drill_pipe_table.setVerticalHeaderItem(7, __qtablewidgetitem81)
+        __qtablewidgetitem82 = QTableWidgetItem()
+        self.drill_pipe_table.setVerticalHeaderItem(8, __qtablewidgetitem82)
+        __qtablewidgetitem83 = QTableWidgetItem()
+        self.drill_pipe_table.setVerticalHeaderItem(9, __qtablewidgetitem83)
+        __qtablewidgetitem84 = QTableWidgetItem()
+        self.drill_pipe_table.setItem(0, 0, __qtablewidgetitem84)
+        __qtablewidgetitem85 = QTableWidgetItem()
+        self.drill_pipe_table.setItem(1, 0, __qtablewidgetitem85)
+        __qtablewidgetitem86 = QTableWidgetItem()
+        self.drill_pipe_table.setItem(2, 0, __qtablewidgetitem86)
+        __qtablewidgetitem87 = QTableWidgetItem()
+        self.drill_pipe_table.setItem(3, 0, __qtablewidgetitem87)
+        __qtablewidgetitem88 = QTableWidgetItem()
+        self.drill_pipe_table.setItem(4, 0, __qtablewidgetitem88)
+        __qtablewidgetitem89 = QTableWidgetItem()
+        self.drill_pipe_table.setItem(5, 0, __qtablewidgetitem89)
+        __qtablewidgetitem90 = QTableWidgetItem()
+        self.drill_pipe_table.setItem(6, 0, __qtablewidgetitem90)
+        __qtablewidgetitem91 = QTableWidgetItem()
+        self.drill_pipe_table.setItem(7, 0, __qtablewidgetitem91)
+        __qtablewidgetitem92 = QTableWidgetItem()
+        self.drill_pipe_table.setItem(8, 0, __qtablewidgetitem92)
+        __qtablewidgetitem93 = QTableWidgetItem()
+        self.drill_pipe_table.setItem(9, 0, __qtablewidgetitem93)
+        self.drill_pipe_table.setObjectName(u"drill_pipe_table")
+        self.drill_pipe_table.setGeometry(QRect(460, 30, 151, 331))
+        self.label_46 = QLabel(self.scrollAreaWidgetContents)
+        self.label_46.setObjectName(u"label_46")
+        self.label_46.setGeometry(QRect(500, 10, 61, 16))
+        self.gridLayoutWidget_7 = QWidget(self.scrollAreaWidgetContents)
+        self.gridLayoutWidget_7.setObjectName(u"gridLayoutWidget_7")
+        self.gridLayoutWidget_7.setGeometry(QRect(1090, 110, 163, 98))
+        self.gridLayout_7 = QGridLayout(self.gridLayoutWidget_7)
+        self.gridLayout_7.setObjectName(u"gridLayout_7")
+        self.gridLayout_7.setContentsMargins(0, 0, 0, 0)
+        self.label_48 = QLabel(self.gridLayoutWidget_7)
+        self.label_48.setObjectName(u"label_48")
+
+        self.gridLayout_7.addWidget(self.label_48, 1, 0, 1, 1)
+
+        self.dj = QDoubleSpinBox(self.gridLayoutWidget_7)
+        self.dj.setObjectName(u"dj")
+
+        self.gridLayout_7.addWidget(self.dj, 1, 1, 1, 1)
+
+        self.label_47 = QLabel(self.gridLayoutWidget_7)
+        self.label_47.setObjectName(u"label_47")
+
+        self.gridLayout_7.addWidget(self.label_47, 0, 0, 1, 1)
+
+        self.barrena = QDoubleSpinBox(self.gridLayoutWidget_7)
+        self.barrena.setObjectName(u"barrena")
+
+        self.gridLayout_7.addWidget(self.barrena, 0, 1, 1, 1)
+
+        self.label_49 = QLabel(self.gridLayoutWidget_7)
+        self.label_49.setObjectName(u"label_49")
+
+        self.gridLayout_7.addWidget(self.label_49, 2, 0, 1, 1)
+
+        self.anular = QDoubleSpinBox(self.gridLayoutWidget_7)
+        self.anular.setObjectName(u"anular")
+
+        self.gridLayout_7.addWidget(self.anular, 2, 1, 1, 1)
+
+        self.pipe_casing_table = QTableWidget(self.scrollAreaWidgetContents)
+        if (self.pipe_casing_table.columnCount() < 1):
+            self.pipe_casing_table.setColumnCount(1)
+        __qtablewidgetitem94 = QTableWidgetItem()
+        self.pipe_casing_table.setHorizontalHeaderItem(0, __qtablewidgetitem94)
+        if (self.pipe_casing_table.rowCount() < 10):
+            self.pipe_casing_table.setRowCount(10)
+        __qtablewidgetitem95 = QTableWidgetItem()
+        self.pipe_casing_table.setVerticalHeaderItem(0, __qtablewidgetitem95)
+        __qtablewidgetitem96 = QTableWidgetItem()
+        self.pipe_casing_table.setVerticalHeaderItem(1, __qtablewidgetitem96)
+        __qtablewidgetitem97 = QTableWidgetItem()
+        self.pipe_casing_table.setVerticalHeaderItem(2, __qtablewidgetitem97)
+        __qtablewidgetitem98 = QTableWidgetItem()
+        self.pipe_casing_table.setVerticalHeaderItem(3, __qtablewidgetitem98)
+        __qtablewidgetitem99 = QTableWidgetItem()
+        self.pipe_casing_table.setVerticalHeaderItem(4, __qtablewidgetitem99)
+        __qtablewidgetitem100 = QTableWidgetItem()
+        self.pipe_casing_table.setVerticalHeaderItem(5, __qtablewidgetitem100)
+        __qtablewidgetitem101 = QTableWidgetItem()
+        self.pipe_casing_table.setVerticalHeaderItem(6, __qtablewidgetitem101)
+        __qtablewidgetitem102 = QTableWidgetItem()
+        self.pipe_casing_table.setVerticalHeaderItem(7, __qtablewidgetitem102)
+        __qtablewidgetitem103 = QTableWidgetItem()
+        self.pipe_casing_table.setVerticalHeaderItem(8, __qtablewidgetitem103)
+        __qtablewidgetitem104 = QTableWidgetItem()
+        self.pipe_casing_table.setVerticalHeaderItem(9, __qtablewidgetitem104)
+        __qtablewidgetitem105 = QTableWidgetItem()
+        self.pipe_casing_table.setItem(0, 0, __qtablewidgetitem105)
+        __qtablewidgetitem106 = QTableWidgetItem()
+        self.pipe_casing_table.setItem(1, 0, __qtablewidgetitem106)
+        __qtablewidgetitem107 = QTableWidgetItem()
+        self.pipe_casing_table.setItem(2, 0, __qtablewidgetitem107)
+        __qtablewidgetitem108 = QTableWidgetItem()
+        self.pipe_casing_table.setItem(3, 0, __qtablewidgetitem108)
+        __qtablewidgetitem109 = QTableWidgetItem()
+        self.pipe_casing_table.setItem(4, 0, __qtablewidgetitem109)
+        __qtablewidgetitem110 = QTableWidgetItem()
+        self.pipe_casing_table.setItem(5, 0, __qtablewidgetitem110)
+        __qtablewidgetitem111 = QTableWidgetItem()
+        self.pipe_casing_table.setItem(6, 0, __qtablewidgetitem111)
+        __qtablewidgetitem112 = QTableWidgetItem()
+        self.pipe_casing_table.setItem(7, 0, __qtablewidgetitem112)
+        __qtablewidgetitem113 = QTableWidgetItem()
+        self.pipe_casing_table.setItem(8, 0, __qtablewidgetitem113)
+        __qtablewidgetitem114 = QTableWidgetItem()
+        self.pipe_casing_table.setItem(9, 0, __qtablewidgetitem114)
+        self.pipe_casing_table.setObjectName(u"pipe_casing_table")
+        self.pipe_casing_table.setGeometry(QRect(460, 490, 181, 331))
+        self.label_50 = QLabel(self.scrollAreaWidgetContents)
+        self.label_50.setObjectName(u"label_50")
+        self.label_50.setGeometry(QRect(510, 460, 101, 16))
+        self.label_51 = QLabel(self.scrollAreaWidgetContents)
+        self.label_51.setObjectName(u"label_51")
+        self.label_51.setGeometry(QRect(640, 10, 91, 16))
+        self.label_51.setAlignment(Qt.AlignCenter)
+        self.drill_collar_table = QTableWidget(self.scrollAreaWidgetContents)
+        if (self.drill_collar_table.columnCount() < 1):
+            self.drill_collar_table.setColumnCount(1)
+        __qtablewidgetitem115 = QTableWidgetItem()
+        self.drill_collar_table.setHorizontalHeaderItem(0, __qtablewidgetitem115)
+        if (self.drill_collar_table.rowCount() < 10):
+            self.drill_collar_table.setRowCount(10)
+        __qtablewidgetitem116 = QTableWidgetItem()
+        self.drill_collar_table.setVerticalHeaderItem(0, __qtablewidgetitem116)
+        __qtablewidgetitem117 = QTableWidgetItem()
+        self.drill_collar_table.setVerticalHeaderItem(1, __qtablewidgetitem117)
+        __qtablewidgetitem118 = QTableWidgetItem()
+        self.drill_collar_table.setVerticalHeaderItem(2, __qtablewidgetitem118)
+        __qtablewidgetitem119 = QTableWidgetItem()
+        self.drill_collar_table.setVerticalHeaderItem(3, __qtablewidgetitem119)
+        __qtablewidgetitem120 = QTableWidgetItem()
+        self.drill_collar_table.setVerticalHeaderItem(4, __qtablewidgetitem120)
+        __qtablewidgetitem121 = QTableWidgetItem()
+        self.drill_collar_table.setVerticalHeaderItem(5, __qtablewidgetitem121)
+        __qtablewidgetitem122 = QTableWidgetItem()
+        self.drill_collar_table.setVerticalHeaderItem(6, __qtablewidgetitem122)
+        __qtablewidgetitem123 = QTableWidgetItem()
+        self.drill_collar_table.setVerticalHeaderItem(7, __qtablewidgetitem123)
+        __qtablewidgetitem124 = QTableWidgetItem()
+        self.drill_collar_table.setVerticalHeaderItem(8, __qtablewidgetitem124)
+        __qtablewidgetitem125 = QTableWidgetItem()
+        self.drill_collar_table.setVerticalHeaderItem(9, __qtablewidgetitem125)
+        __qtablewidgetitem126 = QTableWidgetItem()
+        self.drill_collar_table.setItem(0, 0, __qtablewidgetitem126)
+        __qtablewidgetitem127 = QTableWidgetItem()
+        self.drill_collar_table.setItem(1, 0, __qtablewidgetitem127)
+        __qtablewidgetitem128 = QTableWidgetItem()
+        self.drill_collar_table.setItem(2, 0, __qtablewidgetitem128)
+        __qtablewidgetitem129 = QTableWidgetItem()
+        self.drill_collar_table.setItem(3, 0, __qtablewidgetitem129)
+        __qtablewidgetitem130 = QTableWidgetItem()
+        self.drill_collar_table.setItem(4, 0, __qtablewidgetitem130)
+        __qtablewidgetitem131 = QTableWidgetItem()
+        self.drill_collar_table.setItem(5, 0, __qtablewidgetitem131)
+        __qtablewidgetitem132 = QTableWidgetItem()
+        self.drill_collar_table.setItem(6, 0, __qtablewidgetitem132)
+        __qtablewidgetitem133 = QTableWidgetItem()
+        self.drill_collar_table.setItem(7, 0, __qtablewidgetitem133)
+        __qtablewidgetitem134 = QTableWidgetItem()
+        self.drill_collar_table.setItem(8, 0, __qtablewidgetitem134)
+        __qtablewidgetitem135 = QTableWidgetItem()
+        self.drill_collar_table.setItem(9, 0, __qtablewidgetitem135)
+        self.drill_collar_table.setObjectName(u"drill_collar_table")
+        self.drill_collar_table.setGeometry(QRect(630, 30, 151, 331))
+        self.label_52 = QLabel(self.scrollAreaWidgetContents)
+        self.label_52.setObjectName(u"label_52")
+        self.label_52.setGeometry(QRect(690, 460, 111, 16))
+        self.label_52.setAlignment(Qt.AlignCenter)
+        self.pipe_open_table = QTableWidget(self.scrollAreaWidgetContents)
+        if (self.pipe_open_table.columnCount() < 1):
+            self.pipe_open_table.setColumnCount(1)
+        __qtablewidgetitem136 = QTableWidgetItem()
+        self.pipe_open_table.setHorizontalHeaderItem(0, __qtablewidgetitem136)
+        if (self.pipe_open_table.rowCount() < 10):
+            self.pipe_open_table.setRowCount(10)
+        __qtablewidgetitem137 = QTableWidgetItem()
+        self.pipe_open_table.setVerticalHeaderItem(0, __qtablewidgetitem137)
+        __qtablewidgetitem138 = QTableWidgetItem()
+        self.pipe_open_table.setVerticalHeaderItem(1, __qtablewidgetitem138)
+        __qtablewidgetitem139 = QTableWidgetItem()
+        self.pipe_open_table.setVerticalHeaderItem(2, __qtablewidgetitem139)
+        __qtablewidgetitem140 = QTableWidgetItem()
+        self.pipe_open_table.setVerticalHeaderItem(3, __qtablewidgetitem140)
+        __qtablewidgetitem141 = QTableWidgetItem()
+        self.pipe_open_table.setVerticalHeaderItem(4, __qtablewidgetitem141)
+        __qtablewidgetitem142 = QTableWidgetItem()
+        self.pipe_open_table.setVerticalHeaderItem(5, __qtablewidgetitem142)
+        __qtablewidgetitem143 = QTableWidgetItem()
+        self.pipe_open_table.setVerticalHeaderItem(6, __qtablewidgetitem143)
+        __qtablewidgetitem144 = QTableWidgetItem()
+        self.pipe_open_table.setVerticalHeaderItem(7, __qtablewidgetitem144)
+        __qtablewidgetitem145 = QTableWidgetItem()
+        self.pipe_open_table.setVerticalHeaderItem(8, __qtablewidgetitem145)
+        __qtablewidgetitem146 = QTableWidgetItem()
+        self.pipe_open_table.setVerticalHeaderItem(9, __qtablewidgetitem146)
+        __qtablewidgetitem147 = QTableWidgetItem()
+        self.pipe_open_table.setItem(0, 0, __qtablewidgetitem147)
+        __qtablewidgetitem148 = QTableWidgetItem()
+        self.pipe_open_table.setItem(1, 0, __qtablewidgetitem148)
+        __qtablewidgetitem149 = QTableWidgetItem()
+        self.pipe_open_table.setItem(2, 0, __qtablewidgetitem149)
+        __qtablewidgetitem150 = QTableWidgetItem()
+        self.pipe_open_table.setItem(3, 0, __qtablewidgetitem150)
+        __qtablewidgetitem151 = QTableWidgetItem()
+        self.pipe_open_table.setItem(4, 0, __qtablewidgetitem151)
+        __qtablewidgetitem152 = QTableWidgetItem()
+        self.pipe_open_table.setItem(5, 0, __qtablewidgetitem152)
+        __qtablewidgetitem153 = QTableWidgetItem()
+        self.pipe_open_table.setItem(6, 0, __qtablewidgetitem153)
+        __qtablewidgetitem154 = QTableWidgetItem()
+        self.pipe_open_table.setItem(7, 0, __qtablewidgetitem154)
+        __qtablewidgetitem155 = QTableWidgetItem()
+        self.pipe_open_table.setItem(8, 0, __qtablewidgetitem155)
+        __qtablewidgetitem156 = QTableWidgetItem()
+        self.pipe_open_table.setItem(9, 0, __qtablewidgetitem156)
+        self.pipe_open_table.setObjectName(u"pipe_open_table")
+        self.pipe_open_table.setGeometry(QRect(680, 490, 151, 331))
+        self.gridLayoutWidget_8 = QWidget(self.scrollAreaWidgetContents)
+        self.gridLayoutWidget_8.setObjectName(u"gridLayoutWidget_8")
+        self.gridLayoutWidget_8.setGeometry(QRect(1080, 220, 181, 166))
+        self.gridLayout_8 = QGridLayout(self.gridLayoutWidget_8)
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.gridLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.superf = QDoubleSpinBox(self.gridLayoutWidget_8)
+        self.superf.setObjectName(u"superf")
+
+        self.gridLayout_8.addWidget(self.superf, 1, 1, 1, 1)
+
+        self.label_55 = QLabel(self.gridLayoutWidget_8)
+        self.label_55.setObjectName(u"label_55")
+
+        self.gridLayout_8.addWidget(self.label_55, 2, 0, 1, 1)
+
+        self.p_total = QDoubleSpinBox(self.gridLayoutWidget_8)
+        self.p_total.setObjectName(u"p_total")
+
+        self.gridLayout_8.addWidget(self.p_total, 0, 1, 1, 1)
+
+        self.sarta_2 = QDoubleSpinBox(self.gridLayoutWidget_8)
+        self.sarta_2.setObjectName(u"sarta_2")
+
+        self.gridLayout_8.addWidget(self.sarta_2, 2, 1, 1, 1)
+
+        self.label_53 = QLabel(self.gridLayoutWidget_8)
+        self.label_53.setObjectName(u"label_53")
+
+        self.gridLayout_8.addWidget(self.label_53, 0, 0, 1, 1)
+
+        self.barrena_2 = QDoubleSpinBox(self.gridLayoutWidget_8)
+        self.barrena_2.setObjectName(u"barrena_2")
+
+        self.gridLayout_8.addWidget(self.barrena_2, 3, 1, 1, 1)
+
+        self.label_54 = QLabel(self.gridLayoutWidget_8)
+        self.label_54.setObjectName(u"label_54")
+
+        self.gridLayout_8.addWidget(self.label_54, 1, 0, 1, 1)
+
+        self.label_56 = QLabel(self.gridLayoutWidget_8)
+        self.label_56.setObjectName(u"label_56")
+
+        self.gridLayout_8.addWidget(self.label_56, 3, 0, 1, 1)
+
+        self.label_57 = QLabel(self.gridLayoutWidget_8)
+        self.label_57.setObjectName(u"label_57")
+
+        self.gridLayout_8.addWidget(self.label_57, 4, 0, 1, 1)
+
+        self.anular_2 = QDoubleSpinBox(self.gridLayoutWidget_8)
+        self.anular_2.setObjectName(u"anular_2")
+
+        self.gridLayout_8.addWidget(self.anular_2, 4, 1, 1, 1)
+
+        self.gridLayoutWidget_9 = QWidget(self.scrollAreaWidgetContents)
+        self.gridLayoutWidget_9.setObjectName(u"gridLayoutWidget_9")
+        self.gridLayoutWidget_9.setGeometry(QRect(1090, 10, 160, 31))
+        self.gridLayout_9 = QGridLayout(self.gridLayoutWidget_9)
+        self.gridLayout_9.setObjectName(u"gridLayout_9")
+        self.gridLayout_9.setContentsMargins(0, 0, 0, 0)
+        self.label_58 = QLabel(self.gridLayoutWidget_9)
+        self.label_58.setObjectName(u"label_58")
+        self.label_58.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_9.addWidget(self.label_58, 0, 0, 1, 1)
+
+        self.ecd = QDoubleSpinBox(self.gridLayoutWidget_9)
+        self.ecd.setObjectName(u"ecd")
+
+        self.gridLayout_9.addWidget(self.ecd, 0, 1, 1, 1)
+
+        self.label_59 = QLabel(self.scrollAreaWidgetContents)
+        self.label_59.setObjectName(u"label_59")
+        self.label_59.setGeometry(QRect(900, 460, 131, 16))
+        self.drill_collar_open_table = QTableWidget(self.scrollAreaWidgetContents)
+        if (self.drill_collar_open_table.columnCount() < 1):
+            self.drill_collar_open_table.setColumnCount(1)
+        __qtablewidgetitem157 = QTableWidgetItem()
+        self.drill_collar_open_table.setHorizontalHeaderItem(0, __qtablewidgetitem157)
+        if (self.drill_collar_open_table.rowCount() < 10):
+            self.drill_collar_open_table.setRowCount(10)
+        __qtablewidgetitem158 = QTableWidgetItem()
+        self.drill_collar_open_table.setVerticalHeaderItem(0, __qtablewidgetitem158)
+        __qtablewidgetitem159 = QTableWidgetItem()
+        self.drill_collar_open_table.setVerticalHeaderItem(1, __qtablewidgetitem159)
+        __qtablewidgetitem160 = QTableWidgetItem()
+        self.drill_collar_open_table.setVerticalHeaderItem(2, __qtablewidgetitem160)
+        __qtablewidgetitem161 = QTableWidgetItem()
+        self.drill_collar_open_table.setVerticalHeaderItem(3, __qtablewidgetitem161)
+        __qtablewidgetitem162 = QTableWidgetItem()
+        self.drill_collar_open_table.setVerticalHeaderItem(4, __qtablewidgetitem162)
+        __qtablewidgetitem163 = QTableWidgetItem()
+        self.drill_collar_open_table.setVerticalHeaderItem(5, __qtablewidgetitem163)
+        __qtablewidgetitem164 = QTableWidgetItem()
+        self.drill_collar_open_table.setVerticalHeaderItem(6, __qtablewidgetitem164)
+        __qtablewidgetitem165 = QTableWidgetItem()
+        self.drill_collar_open_table.setVerticalHeaderItem(7, __qtablewidgetitem165)
+        __qtablewidgetitem166 = QTableWidgetItem()
+        self.drill_collar_open_table.setVerticalHeaderItem(8, __qtablewidgetitem166)
+        __qtablewidgetitem167 = QTableWidgetItem()
+        self.drill_collar_open_table.setVerticalHeaderItem(9, __qtablewidgetitem167)
+        __qtablewidgetitem168 = QTableWidgetItem()
+        self.drill_collar_open_table.setItem(0, 0, __qtablewidgetitem168)
+        __qtablewidgetitem169 = QTableWidgetItem()
+        self.drill_collar_open_table.setItem(1, 0, __qtablewidgetitem169)
+        __qtablewidgetitem170 = QTableWidgetItem()
+        self.drill_collar_open_table.setItem(2, 0, __qtablewidgetitem170)
+        __qtablewidgetitem171 = QTableWidgetItem()
+        self.drill_collar_open_table.setItem(3, 0, __qtablewidgetitem171)
+        __qtablewidgetitem172 = QTableWidgetItem()
+        self.drill_collar_open_table.setItem(4, 0, __qtablewidgetitem172)
+        __qtablewidgetitem173 = QTableWidgetItem()
+        self.drill_collar_open_table.setItem(5, 0, __qtablewidgetitem173)
+        __qtablewidgetitem174 = QTableWidgetItem()
+        self.drill_collar_open_table.setItem(6, 0, __qtablewidgetitem174)
+        __qtablewidgetitem175 = QTableWidgetItem()
+        self.drill_collar_open_table.setItem(7, 0, __qtablewidgetitem175)
+        __qtablewidgetitem176 = QTableWidgetItem()
+        self.drill_collar_open_table.setItem(8, 0, __qtablewidgetitem176)
+        __qtablewidgetitem177 = QTableWidgetItem()
+        self.drill_collar_open_table.setItem(9, 0, __qtablewidgetitem177)
+        self.drill_collar_open_table.setObjectName(u"drill_collar_open_table")
+        self.drill_collar_open_table.setGeometry(QRect(880, 490, 151, 331))
+        self.label_60 = QLabel(self.scrollAreaWidgetContents)
+        self.label_60.setObjectName(u"label_60")
+        self.label_60.setGeometry(QRect(850, 40, 141, 16))
+        self.hidraulic_drill_table = QTableWidget(self.scrollAreaWidgetContents)
+        if (self.hidraulic_drill_table.columnCount() < 1):
+            self.hidraulic_drill_table.setColumnCount(1)
+        __qtablewidgetitem178 = QTableWidgetItem()
+        self.hidraulic_drill_table.setHorizontalHeaderItem(0, __qtablewidgetitem178)
+        if (self.hidraulic_drill_table.rowCount() < 8):
+            self.hidraulic_drill_table.setRowCount(8)
+        __qtablewidgetitem179 = QTableWidgetItem()
+        self.hidraulic_drill_table.setVerticalHeaderItem(0, __qtablewidgetitem179)
+        __qtablewidgetitem180 = QTableWidgetItem()
+        self.hidraulic_drill_table.setVerticalHeaderItem(1, __qtablewidgetitem180)
+        __qtablewidgetitem181 = QTableWidgetItem()
+        self.hidraulic_drill_table.setVerticalHeaderItem(2, __qtablewidgetitem181)
+        __qtablewidgetitem182 = QTableWidgetItem()
+        self.hidraulic_drill_table.setVerticalHeaderItem(3, __qtablewidgetitem182)
+        __qtablewidgetitem183 = QTableWidgetItem()
+        self.hidraulic_drill_table.setVerticalHeaderItem(4, __qtablewidgetitem183)
+        __qtablewidgetitem184 = QTableWidgetItem()
+        self.hidraulic_drill_table.setVerticalHeaderItem(5, __qtablewidgetitem184)
+        __qtablewidgetitem185 = QTableWidgetItem()
+        self.hidraulic_drill_table.setVerticalHeaderItem(6, __qtablewidgetitem185)
+        __qtablewidgetitem186 = QTableWidgetItem()
+        self.hidraulic_drill_table.setVerticalHeaderItem(7, __qtablewidgetitem186)
+        __qtablewidgetitem187 = QTableWidgetItem()
+        self.hidraulic_drill_table.setItem(0, 0, __qtablewidgetitem187)
+        __qtablewidgetitem188 = QTableWidgetItem()
+        self.hidraulic_drill_table.setItem(1, 0, __qtablewidgetitem188)
+        __qtablewidgetitem189 = QTableWidgetItem()
+        self.hidraulic_drill_table.setItem(2, 0, __qtablewidgetitem189)
+        __qtablewidgetitem190 = QTableWidgetItem()
+        self.hidraulic_drill_table.setItem(3, 0, __qtablewidgetitem190)
+        __qtablewidgetitem191 = QTableWidgetItem()
+        self.hidraulic_drill_table.setItem(4, 0, __qtablewidgetitem191)
+        __qtablewidgetitem192 = QTableWidgetItem()
+        self.hidraulic_drill_table.setItem(5, 0, __qtablewidgetitem192)
+        __qtablewidgetitem193 = QTableWidgetItem()
+        self.hidraulic_drill_table.setItem(6, 0, __qtablewidgetitem193)
+        __qtablewidgetitem194 = QTableWidgetItem()
+        self.hidraulic_drill_table.setItem(7, 0, __qtablewidgetitem194)
+        self.hidraulic_drill_table.setObjectName(u"hidraulic_drill_table")
+        self.hidraulic_drill_table.setGeometry(QRect(830, 60, 181, 281))
+        self.label_61 = QLabel(self.scrollAreaWidgetContents)
+        self.label_61.setObjectName(u"label_61")
+        self.label_61.setGeometry(QRect(1120, 410, 111, 16))
+        self.clean_table = QTableWidget(self.scrollAreaWidgetContents)
+        if (self.clean_table.columnCount() < 1):
+            self.clean_table.setColumnCount(1)
+        __qtablewidgetitem195 = QTableWidgetItem()
+        self.clean_table.setHorizontalHeaderItem(0, __qtablewidgetitem195)
+        if (self.clean_table.rowCount() < 12):
+            self.clean_table.setRowCount(12)
+        __qtablewidgetitem196 = QTableWidgetItem()
+        self.clean_table.setVerticalHeaderItem(0, __qtablewidgetitem196)
+        __qtablewidgetitem197 = QTableWidgetItem()
+        self.clean_table.setVerticalHeaderItem(1, __qtablewidgetitem197)
+        __qtablewidgetitem198 = QTableWidgetItem()
+        self.clean_table.setVerticalHeaderItem(2, __qtablewidgetitem198)
+        __qtablewidgetitem199 = QTableWidgetItem()
+        self.clean_table.setVerticalHeaderItem(3, __qtablewidgetitem199)
+        __qtablewidgetitem200 = QTableWidgetItem()
+        self.clean_table.setVerticalHeaderItem(4, __qtablewidgetitem200)
+        __qtablewidgetitem201 = QTableWidgetItem()
+        self.clean_table.setVerticalHeaderItem(5, __qtablewidgetitem201)
+        __qtablewidgetitem202 = QTableWidgetItem()
+        self.clean_table.setVerticalHeaderItem(6, __qtablewidgetitem202)
+        __qtablewidgetitem203 = QTableWidgetItem()
+        self.clean_table.setVerticalHeaderItem(7, __qtablewidgetitem203)
+        __qtablewidgetitem204 = QTableWidgetItem()
+        self.clean_table.setVerticalHeaderItem(8, __qtablewidgetitem204)
+        __qtablewidgetitem205 = QTableWidgetItem()
+        self.clean_table.setVerticalHeaderItem(9, __qtablewidgetitem205)
+        __qtablewidgetitem206 = QTableWidgetItem()
+        self.clean_table.setVerticalHeaderItem(10, __qtablewidgetitem206)
+        __qtablewidgetitem207 = QTableWidgetItem()
+        self.clean_table.setVerticalHeaderItem(11, __qtablewidgetitem207)
+        __qtablewidgetitem208 = QTableWidgetItem()
+        self.clean_table.setItem(0, 0, __qtablewidgetitem208)
+        __qtablewidgetitem209 = QTableWidgetItem()
+        self.clean_table.setItem(1, 0, __qtablewidgetitem209)
+        __qtablewidgetitem210 = QTableWidgetItem()
+        self.clean_table.setItem(2, 0, __qtablewidgetitem210)
+        __qtablewidgetitem211 = QTableWidgetItem()
+        self.clean_table.setItem(3, 0, __qtablewidgetitem211)
+        __qtablewidgetitem212 = QTableWidgetItem()
+        self.clean_table.setItem(4, 0, __qtablewidgetitem212)
+        __qtablewidgetitem213 = QTableWidgetItem()
+        self.clean_table.setItem(5, 0, __qtablewidgetitem213)
+        __qtablewidgetitem214 = QTableWidgetItem()
+        self.clean_table.setItem(6, 0, __qtablewidgetitem214)
+        __qtablewidgetitem215 = QTableWidgetItem()
+        self.clean_table.setItem(7, 0, __qtablewidgetitem215)
+        __qtablewidgetitem216 = QTableWidgetItem()
+        self.clean_table.setItem(8, 0, __qtablewidgetitem216)
+        __qtablewidgetitem217 = QTableWidgetItem()
+        self.clean_table.setItem(9, 0, __qtablewidgetitem217)
+        __qtablewidgetitem218 = QTableWidgetItem()
+        self.clean_table.setItem(10, 0, __qtablewidgetitem218)
+        __qtablewidgetitem219 = QTableWidgetItem()
+        self.clean_table.setItem(11, 0, __qtablewidgetitem219)
+        self.clean_table.setObjectName(u"clean_table")
+        self.clean_table.setGeometry(QRect(1090, 440, 171, 411))
+        self.btn_calcular = QPushButton(self.scrollAreaWidgetContents)
+        self.btn_calcular.setObjectName(u"btn_calcular")
+        self.btn_calcular.setGeometry(QRect(40, 850, 111, 41))
+        self.btn_limpiar = QPushButton(self.scrollAreaWidgetContents)
+        self.btn_limpiar.setObjectName(u"btn_limpiar")
+        self.btn_limpiar.setGeometry(QRect(200, 850, 111, 41))
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.stackedWidget.addWidget(self.page_tres)
         self.page_cuatro = QWidget()
         self.page_cuatro.setObjectName(u"page_cuatro")
@@ -1380,6 +2158,7 @@ class Ui_MainWindow(object):
         self.bt_inicio.setText(QCoreApplication.translate("MainWindow", u" Modelo R", None))
         self.bt_uno.setText(QCoreApplication.translate("MainWindow", u" Base de Datos", None))
         self.bt_2.setText(QCoreApplication.translate("MainWindow", u"DEC", None))
+        self.bt_3.setText(QCoreApplication.translate("MainWindow", u"Hidar\u00falica", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Viscosidad Aparente", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Punto de Cedencia", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Viscosidad Pl\u00e0stica", None))
@@ -1588,7 +2367,378 @@ class Ui_MainWindow(object):
         self.label_18.setText("")
         self.label_19.setText("")
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"Se considera un valor de E constante = 0.000053 [ADIM] de acuerdo al equipo superficial", None))
-        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"3", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Caida de Presi\u00f3n Total en el Sistema y ECD", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"Plastic Viscosity", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"Casing length", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Bit Size", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"Density of Particle", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"Pump Output", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"Fracture Gradient", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Drill Collar Length", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Casing Size", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Rate of Penetration", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Drill Pipe Size", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"L600", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"Surface Case", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"L300", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Solid SG", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"Pump Pressure", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"Gel strength", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"Prof Total", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Diameter of Particle", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Yield Point", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"Drill Collar Size", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"Open Hole Length", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Mud Weight", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Psup", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Sarta", None))
+        ___qtablewidgetitem73 = self.drill_pipe_table.horizontalHeaderItem(0)
+        ___qtablewidgetitem73.setText(QCoreApplication.translate("MainWindow", u"Values", None));
+        ___qtablewidgetitem74 = self.drill_pipe_table.verticalHeaderItem(0)
+        ___qtablewidgetitem74.setText(QCoreApplication.translate("MainWindow", u"Vp1", None));
+        ___qtablewidgetitem75 = self.drill_pipe_table.verticalHeaderItem(1)
+        ___qtablewidgetitem75.setText(QCoreApplication.translate("MainWindow", u"np", None));
+        ___qtablewidgetitem76 = self.drill_pipe_table.verticalHeaderItem(2)
+        ___qtablewidgetitem76.setText(QCoreApplication.translate("MainWindow", u"kp", None));
+        ___qtablewidgetitem77 = self.drill_pipe_table.verticalHeaderItem(3)
+        ___qtablewidgetitem77.setText(QCoreApplication.translate("MainWindow", u"ViscE1", None));
+        ___qtablewidgetitem78 = self.drill_pipe_table.verticalHeaderItem(4)
+        ___qtablewidgetitem78.setText(QCoreApplication.translate("MainWindow", u"alfa", None));
+        ___qtablewidgetitem79 = self.drill_pipe_table.verticalHeaderItem(5)
+        ___qtablewidgetitem79.setText(QCoreApplication.translate("MainWindow", u"Rep1", None));
+        ___qtablewidgetitem80 = self.drill_pipe_table.verticalHeaderItem(6)
+        ___qtablewidgetitem80.setText(QCoreApplication.translate("MainWindow", u"ReL", None));
+        ___qtablewidgetitem81 = self.drill_pipe_table.verticalHeaderItem(7)
+        ___qtablewidgetitem81.setText(QCoreApplication.translate("MainWindow", u"ReT", None));
+        ___qtablewidgetitem82 = self.drill_pipe_table.verticalHeaderItem(8)
+        ___qtablewidgetitem82.setText(QCoreApplication.translate("MainWindow", u"fp1", None));
+        ___qtablewidgetitem83 = self.drill_pipe_table.verticalHeaderItem(9)
+        ___qtablewidgetitem83.setText(QCoreApplication.translate("MainWindow", u"Ppipe", None));
+
+        __sortingEnabled3 = self.drill_pipe_table.isSortingEnabled()
+        self.drill_pipe_table.setSortingEnabled(False)
+        ___qtablewidgetitem84 = self.drill_pipe_table.item(0, 0)
+        ___qtablewidgetitem84.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem85 = self.drill_pipe_table.item(1, 0)
+        ___qtablewidgetitem85.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem86 = self.drill_pipe_table.item(2, 0)
+        ___qtablewidgetitem86.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem87 = self.drill_pipe_table.item(3, 0)
+        ___qtablewidgetitem87.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem88 = self.drill_pipe_table.item(4, 0)
+        ___qtablewidgetitem88.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem89 = self.drill_pipe_table.item(5, 0)
+        ___qtablewidgetitem89.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem90 = self.drill_pipe_table.item(6, 0)
+        ___qtablewidgetitem90.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem91 = self.drill_pipe_table.item(7, 0)
+        ___qtablewidgetitem91.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem92 = self.drill_pipe_table.item(8, 0)
+        ___qtablewidgetitem92.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem93 = self.drill_pipe_table.item(9, 0)
+        ___qtablewidgetitem93.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        self.drill_pipe_table.setSortingEnabled(__sortingEnabled3)
+
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Drill Pipe", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"DJ's", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Barrena", None))
+        self.label_49.setText(QCoreApplication.translate("MainWindow", u"Anular", None))
+        ___qtablewidgetitem94 = self.pipe_casing_table.horizontalHeaderItem(0)
+        ___qtablewidgetitem94.setText(QCoreApplication.translate("MainWindow", u"Values", None));
+        ___qtablewidgetitem95 = self.pipe_casing_table.verticalHeaderItem(0)
+        ___qtablewidgetitem95.setText(QCoreApplication.translate("MainWindow", u"Va1", None));
+        ___qtablewidgetitem96 = self.pipe_casing_table.verticalHeaderItem(1)
+        ___qtablewidgetitem96.setText(QCoreApplication.translate("MainWindow", u"na", None));
+        ___qtablewidgetitem97 = self.pipe_casing_table.verticalHeaderItem(2)
+        ___qtablewidgetitem97.setText(QCoreApplication.translate("MainWindow", u"ka", None));
+        ___qtablewidgetitem98 = self.pipe_casing_table.verticalHeaderItem(3)
+        ___qtablewidgetitem98.setText(QCoreApplication.translate("MainWindow", u"VisEa1", None));
+        ___qtablewidgetitem99 = self.pipe_casing_table.verticalHeaderItem(4)
+        ___qtablewidgetitem99.setText(QCoreApplication.translate("MainWindow", u"beta", None));
+        ___qtablewidgetitem100 = self.pipe_casing_table.verticalHeaderItem(5)
+        ___qtablewidgetitem100.setText(QCoreApplication.translate("MainWindow", u"Rea1", None));
+        ___qtablewidgetitem101 = self.pipe_casing_table.verticalHeaderItem(6)
+        ___qtablewidgetitem101.setText(QCoreApplication.translate("MainWindow", u"ReLa", None));
+        ___qtablewidgetitem102 = self.pipe_casing_table.verticalHeaderItem(7)
+        ___qtablewidgetitem102.setText(QCoreApplication.translate("MainWindow", u"ReTa", None));
+        ___qtablewidgetitem103 = self.pipe_casing_table.verticalHeaderItem(8)
+        ___qtablewidgetitem103.setText(QCoreApplication.translate("MainWindow", u"fa1", None));
+        ___qtablewidgetitem104 = self.pipe_casing_table.verticalHeaderItem(9)
+        ___qtablewidgetitem104.setText(QCoreApplication.translate("MainWindow", u"Pa1", None));
+
+        __sortingEnabled4 = self.pipe_casing_table.isSortingEnabled()
+        self.pipe_casing_table.setSortingEnabled(False)
+        ___qtablewidgetitem105 = self.pipe_casing_table.item(0, 0)
+        ___qtablewidgetitem105.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem106 = self.pipe_casing_table.item(1, 0)
+        ___qtablewidgetitem106.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem107 = self.pipe_casing_table.item(2, 0)
+        ___qtablewidgetitem107.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem108 = self.pipe_casing_table.item(3, 0)
+        ___qtablewidgetitem108.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem109 = self.pipe_casing_table.item(4, 0)
+        ___qtablewidgetitem109.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem110 = self.pipe_casing_table.item(5, 0)
+        ___qtablewidgetitem110.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem111 = self.pipe_casing_table.item(6, 0)
+        ___qtablewidgetitem111.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem112 = self.pipe_casing_table.item(7, 0)
+        ___qtablewidgetitem112.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem113 = self.pipe_casing_table.item(8, 0)
+        ___qtablewidgetitem113.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem114 = self.pipe_casing_table.item(9, 0)
+        ___qtablewidgetitem114.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        self.pipe_casing_table.setSortingEnabled(__sortingEnabled4)
+
+        self.label_50.setText(QCoreApplication.translate("MainWindow", u"Pipe/Casing", None))
+        self.label_51.setText(QCoreApplication.translate("MainWindow", u"Drill Collar", None))
+        ___qtablewidgetitem115 = self.drill_collar_table.horizontalHeaderItem(0)
+        ___qtablewidgetitem115.setText(QCoreApplication.translate("MainWindow", u"Values", None));
+        ___qtablewidgetitem116 = self.drill_collar_table.verticalHeaderItem(0)
+        ___qtablewidgetitem116.setText(QCoreApplication.translate("MainWindow", u"Vp2", None));
+        ___qtablewidgetitem117 = self.drill_collar_table.verticalHeaderItem(1)
+        ___qtablewidgetitem117.setText(QCoreApplication.translate("MainWindow", u"np", None));
+        ___qtablewidgetitem118 = self.drill_collar_table.verticalHeaderItem(2)
+        ___qtablewidgetitem118.setText(QCoreApplication.translate("MainWindow", u"kp", None));
+        ___qtablewidgetitem119 = self.drill_collar_table.verticalHeaderItem(3)
+        ___qtablewidgetitem119.setText(QCoreApplication.translate("MainWindow", u"ViscE2", None));
+        ___qtablewidgetitem120 = self.drill_collar_table.verticalHeaderItem(4)
+        ___qtablewidgetitem120.setText(QCoreApplication.translate("MainWindow", u"alfa", None));
+        ___qtablewidgetitem121 = self.drill_collar_table.verticalHeaderItem(5)
+        ___qtablewidgetitem121.setText(QCoreApplication.translate("MainWindow", u"Rep2", None));
+        ___qtablewidgetitem122 = self.drill_collar_table.verticalHeaderItem(6)
+        ___qtablewidgetitem122.setText(QCoreApplication.translate("MainWindow", u"ReL", None));
+        ___qtablewidgetitem123 = self.drill_collar_table.verticalHeaderItem(7)
+        ___qtablewidgetitem123.setText(QCoreApplication.translate("MainWindow", u"ReT", None));
+        ___qtablewidgetitem124 = self.drill_collar_table.verticalHeaderItem(8)
+        ___qtablewidgetitem124.setText(QCoreApplication.translate("MainWindow", u"fp2", None));
+        ___qtablewidgetitem125 = self.drill_collar_table.verticalHeaderItem(9)
+        ___qtablewidgetitem125.setText(QCoreApplication.translate("MainWindow", u"Pd.c.", None));
+
+        __sortingEnabled5 = self.drill_collar_table.isSortingEnabled()
+        self.drill_collar_table.setSortingEnabled(False)
+        ___qtablewidgetitem126 = self.drill_collar_table.item(0, 0)
+        ___qtablewidgetitem126.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem127 = self.drill_collar_table.item(1, 0)
+        ___qtablewidgetitem127.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem128 = self.drill_collar_table.item(2, 0)
+        ___qtablewidgetitem128.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem129 = self.drill_collar_table.item(3, 0)
+        ___qtablewidgetitem129.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem130 = self.drill_collar_table.item(4, 0)
+        ___qtablewidgetitem130.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem131 = self.drill_collar_table.item(5, 0)
+        ___qtablewidgetitem131.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem132 = self.drill_collar_table.item(6, 0)
+        ___qtablewidgetitem132.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem133 = self.drill_collar_table.item(7, 0)
+        ___qtablewidgetitem133.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem134 = self.drill_collar_table.item(8, 0)
+        ___qtablewidgetitem134.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem135 = self.drill_collar_table.item(9, 0)
+        ___qtablewidgetitem135.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        self.drill_collar_table.setSortingEnabled(__sortingEnabled5)
+
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"Pipe/Open Hole", None))
+        ___qtablewidgetitem136 = self.pipe_open_table.horizontalHeaderItem(0)
+        ___qtablewidgetitem136.setText(QCoreApplication.translate("MainWindow", u"Values", None));
+        ___qtablewidgetitem137 = self.pipe_open_table.verticalHeaderItem(0)
+        ___qtablewidgetitem137.setText(QCoreApplication.translate("MainWindow", u"Va2", None));
+        ___qtablewidgetitem138 = self.pipe_open_table.verticalHeaderItem(1)
+        ___qtablewidgetitem138.setText(QCoreApplication.translate("MainWindow", u"na", None));
+        ___qtablewidgetitem139 = self.pipe_open_table.verticalHeaderItem(2)
+        ___qtablewidgetitem139.setText(QCoreApplication.translate("MainWindow", u"ka", None));
+        ___qtablewidgetitem140 = self.pipe_open_table.verticalHeaderItem(3)
+        ___qtablewidgetitem140.setText(QCoreApplication.translate("MainWindow", u"VisEa2", None));
+        ___qtablewidgetitem141 = self.pipe_open_table.verticalHeaderItem(4)
+        ___qtablewidgetitem141.setText(QCoreApplication.translate("MainWindow", u"beta", None));
+        ___qtablewidgetitem142 = self.pipe_open_table.verticalHeaderItem(5)
+        ___qtablewidgetitem142.setText(QCoreApplication.translate("MainWindow", u"Rea2", None));
+        ___qtablewidgetitem143 = self.pipe_open_table.verticalHeaderItem(6)
+        ___qtablewidgetitem143.setText(QCoreApplication.translate("MainWindow", u"ReLa", None));
+        ___qtablewidgetitem144 = self.pipe_open_table.verticalHeaderItem(7)
+        ___qtablewidgetitem144.setText(QCoreApplication.translate("MainWindow", u"ReTa", None));
+        ___qtablewidgetitem145 = self.pipe_open_table.verticalHeaderItem(8)
+        ___qtablewidgetitem145.setText(QCoreApplication.translate("MainWindow", u"fa2", None));
+        ___qtablewidgetitem146 = self.pipe_open_table.verticalHeaderItem(9)
+        ___qtablewidgetitem146.setText(QCoreApplication.translate("MainWindow", u"Pa2", None));
+
+        __sortingEnabled6 = self.pipe_open_table.isSortingEnabled()
+        self.pipe_open_table.setSortingEnabled(False)
+        ___qtablewidgetitem147 = self.pipe_open_table.item(0, 0)
+        ___qtablewidgetitem147.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem148 = self.pipe_open_table.item(1, 0)
+        ___qtablewidgetitem148.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem149 = self.pipe_open_table.item(2, 0)
+        ___qtablewidgetitem149.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem150 = self.pipe_open_table.item(3, 0)
+        ___qtablewidgetitem150.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem151 = self.pipe_open_table.item(4, 0)
+        ___qtablewidgetitem151.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem152 = self.pipe_open_table.item(5, 0)
+        ___qtablewidgetitem152.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem153 = self.pipe_open_table.item(6, 0)
+        ___qtablewidgetitem153.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem154 = self.pipe_open_table.item(7, 0)
+        ___qtablewidgetitem154.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem155 = self.pipe_open_table.item(8, 0)
+        ___qtablewidgetitem155.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem156 = self.pipe_open_table.item(9, 0)
+        ___qtablewidgetitem156.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        self.pipe_open_table.setSortingEnabled(__sortingEnabled6)
+
+        self.label_55.setText(QCoreApplication.translate("MainWindow", u"Sarta", None))
+        self.label_53.setText(QCoreApplication.translate("MainWindow", u"PTotal", None))
+        self.label_54.setText(QCoreApplication.translate("MainWindow", u"Superf", None))
+        self.label_56.setText(QCoreApplication.translate("MainWindow", u"Barrena", None))
+        self.label_57.setText(QCoreApplication.translate("MainWindow", u"Anular", None))
+        self.label_58.setText(QCoreApplication.translate("MainWindow", u"ECD", None))
+        self.label_59.setText(QCoreApplication.translate("MainWindow", u"Drill Collar/Open Hole", None))
+        ___qtablewidgetitem157 = self.drill_collar_open_table.horizontalHeaderItem(0)
+        ___qtablewidgetitem157.setText(QCoreApplication.translate("MainWindow", u"Values", None));
+        ___qtablewidgetitem158 = self.drill_collar_open_table.verticalHeaderItem(0)
+        ___qtablewidgetitem158.setText(QCoreApplication.translate("MainWindow", u"Va3", None));
+        ___qtablewidgetitem159 = self.drill_collar_open_table.verticalHeaderItem(1)
+        ___qtablewidgetitem159.setText(QCoreApplication.translate("MainWindow", u"na", None));
+        ___qtablewidgetitem160 = self.drill_collar_open_table.verticalHeaderItem(2)
+        ___qtablewidgetitem160.setText(QCoreApplication.translate("MainWindow", u"ka", None));
+        ___qtablewidgetitem161 = self.drill_collar_open_table.verticalHeaderItem(3)
+        ___qtablewidgetitem161.setText(QCoreApplication.translate("MainWindow", u"VisEa3", None));
+        ___qtablewidgetitem162 = self.drill_collar_open_table.verticalHeaderItem(4)
+        ___qtablewidgetitem162.setText(QCoreApplication.translate("MainWindow", u"beta", None));
+        ___qtablewidgetitem163 = self.drill_collar_open_table.verticalHeaderItem(5)
+        ___qtablewidgetitem163.setText(QCoreApplication.translate("MainWindow", u"Rea4", None));
+        ___qtablewidgetitem164 = self.drill_collar_open_table.verticalHeaderItem(6)
+        ___qtablewidgetitem164.setText(QCoreApplication.translate("MainWindow", u"ReLa", None));
+        ___qtablewidgetitem165 = self.drill_collar_open_table.verticalHeaderItem(7)
+        ___qtablewidgetitem165.setText(QCoreApplication.translate("MainWindow", u"ReTa", None));
+        ___qtablewidgetitem166 = self.drill_collar_open_table.verticalHeaderItem(8)
+        ___qtablewidgetitem166.setText(QCoreApplication.translate("MainWindow", u"fa3", None));
+        ___qtablewidgetitem167 = self.drill_collar_open_table.verticalHeaderItem(9)
+        ___qtablewidgetitem167.setText(QCoreApplication.translate("MainWindow", u"Pa3", None));
+
+        __sortingEnabled7 = self.drill_collar_open_table.isSortingEnabled()
+        self.drill_collar_open_table.setSortingEnabled(False)
+        ___qtablewidgetitem168 = self.drill_collar_open_table.item(0, 0)
+        ___qtablewidgetitem168.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem169 = self.drill_collar_open_table.item(1, 0)
+        ___qtablewidgetitem169.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem170 = self.drill_collar_open_table.item(2, 0)
+        ___qtablewidgetitem170.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem171 = self.drill_collar_open_table.item(3, 0)
+        ___qtablewidgetitem171.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem172 = self.drill_collar_open_table.item(4, 0)
+        ___qtablewidgetitem172.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem173 = self.drill_collar_open_table.item(5, 0)
+        ___qtablewidgetitem173.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem174 = self.drill_collar_open_table.item(6, 0)
+        ___qtablewidgetitem174.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem175 = self.drill_collar_open_table.item(7, 0)
+        ___qtablewidgetitem175.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem176 = self.drill_collar_open_table.item(8, 0)
+        ___qtablewidgetitem176.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem177 = self.drill_collar_open_table.item(9, 0)
+        ___qtablewidgetitem177.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        self.drill_collar_open_table.setSortingEnabled(__sortingEnabled7)
+
+        self.label_60.setText(QCoreApplication.translate("MainWindow", u"Hidr\u00e1ulica de la Barrena", None))
+        ___qtablewidgetitem178 = self.hidraulic_drill_table.horizontalHeaderItem(0)
+        ___qtablewidgetitem178.setText(QCoreApplication.translate("MainWindow", u"Values", None));
+        ___qtablewidgetitem179 = self.hidraulic_drill_table.verticalHeaderItem(0)
+        ___qtablewidgetitem179.setText(QCoreApplication.translate("MainWindow", u"Vab", None));
+        ___qtablewidgetitem180 = self.hidraulic_drill_table.verticalHeaderItem(1)
+        ___qtablewidgetitem180.setText(QCoreApplication.translate("MainWindow", u"HHPb", None));
+        ___qtablewidgetitem181 = self.hidraulic_drill_table.verticalHeaderItem(2)
+        ___qtablewidgetitem181.setText(QCoreApplication.translate("MainWindow", u"HHPb/pg2", None));
+        ___qtablewidgetitem182 = self.hidraulic_drill_table.verticalHeaderItem(3)
+        ___qtablewidgetitem182.setText(QCoreApplication.translate("MainWindow", u"%psib", None));
+        ___qtablewidgetitem183 = self.hidraulic_drill_table.verticalHeaderItem(4)
+        ___qtablewidgetitem183.setText(QCoreApplication.translate("MainWindow", u"SysHHP", None));
+        ___qtablewidgetitem184 = self.hidraulic_drill_table.verticalHeaderItem(5)
+        ___qtablewidgetitem184.setText(QCoreApplication.translate("MainWindow", u"Vn", None));
+        ___qtablewidgetitem185 = self.hidraulic_drill_table.verticalHeaderItem(6)
+        ___qtablewidgetitem185.setText(QCoreApplication.translate("MainWindow", u"IF", None));
+        ___qtablewidgetitem186 = self.hidraulic_drill_table.verticalHeaderItem(7)
+        ___qtablewidgetitem186.setText(QCoreApplication.translate("MainWindow", u"IF/pg2", None));
+
+        __sortingEnabled8 = self.hidraulic_drill_table.isSortingEnabled()
+        self.hidraulic_drill_table.setSortingEnabled(False)
+        ___qtablewidgetitem187 = self.hidraulic_drill_table.item(0, 0)
+        ___qtablewidgetitem187.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem188 = self.hidraulic_drill_table.item(1, 0)
+        ___qtablewidgetitem188.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem189 = self.hidraulic_drill_table.item(2, 0)
+        ___qtablewidgetitem189.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem190 = self.hidraulic_drill_table.item(3, 0)
+        ___qtablewidgetitem190.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem191 = self.hidraulic_drill_table.item(4, 0)
+        ___qtablewidgetitem191.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem192 = self.hidraulic_drill_table.item(5, 0)
+        ___qtablewidgetitem192.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem193 = self.hidraulic_drill_table.item(6, 0)
+        ___qtablewidgetitem193.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem194 = self.hidraulic_drill_table.item(7, 0)
+        ___qtablewidgetitem194.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        self.hidraulic_drill_table.setSortingEnabled(__sortingEnabled8)
+
+        self.label_61.setText(QCoreApplication.translate("MainWindow", u"Limpieza de Pozo", None))
+        ___qtablewidgetitem195 = self.clean_table.horizontalHeaderItem(0)
+        ___qtablewidgetitem195.setText(QCoreApplication.translate("MainWindow", u"Values", None));
+        ___qtablewidgetitem196 = self.clean_table.verticalHeaderItem(0)
+        ___qtablewidgetitem196.setText(QCoreApplication.translate("MainWindow", u"Vab", None));
+        ___qtablewidgetitem197 = self.clean_table.verticalHeaderItem(1)
+        ___qtablewidgetitem197.setText(QCoreApplication.translate("MainWindow", u"beta", None));
+        ___qtablewidgetitem198 = self.clean_table.verticalHeaderItem(2)
+        ___qtablewidgetitem198.setText(QCoreApplication.translate("MainWindow", u"gama", None));
+        ___qtablewidgetitem199 = self.clean_table.verticalHeaderItem(3)
+        ___qtablewidgetitem199.setText(QCoreApplication.translate("MainWindow", u"Vs", None));
+        ___qtablewidgetitem200 = self.clean_table.verticalHeaderItem(4)
+        ___qtablewidgetitem200.setText(QCoreApplication.translate("MainWindow", u"NTP", None));
+        ___qtablewidgetitem201 = self.clean_table.verticalHeaderItem(5)
+        ___qtablewidgetitem201.setText(QCoreApplication.translate("MainWindow", u"ITT", None));
+        ___qtablewidgetitem202 = self.clean_table.verticalHeaderItem(6)
+        ___qtablewidgetitem202.setText(QCoreApplication.translate("MainWindow", u"NTE", None));
+        ___qtablewidgetitem203 = self.clean_table.verticalHeaderItem(7)
+        ___qtablewidgetitem203.setText(QCoreApplication.translate("MainWindow", u"Ca", None));
+        ___qtablewidgetitem204 = self.clean_table.verticalHeaderItem(8)
+        ___qtablewidgetitem204.setText(QCoreApplication.translate("MainWindow", u"Den Ca", None));
+        ___qtablewidgetitem205 = self.clean_table.verticalHeaderItem(9)
+        ___qtablewidgetitem205.setText(QCoreApplication.translate("MainWindow", u"nhb", None));
+        ___qtablewidgetitem206 = self.clean_table.verticalHeaderItem(10)
+        ___qtablewidgetitem206.setText(QCoreApplication.translate("MainWindow", u"khb", None));
+        ___qtablewidgetitem207 = self.clean_table.verticalHeaderItem(11)
+        ___qtablewidgetitem207.setText(QCoreApplication.translate("MainWindow", u"CCI", None));
+
+        __sortingEnabled9 = self.clean_table.isSortingEnabled()
+        self.clean_table.setSortingEnabled(False)
+        ___qtablewidgetitem208 = self.clean_table.item(0, 0)
+        ___qtablewidgetitem208.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem209 = self.clean_table.item(1, 0)
+        ___qtablewidgetitem209.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem210 = self.clean_table.item(2, 0)
+        ___qtablewidgetitem210.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem211 = self.clean_table.item(3, 0)
+        ___qtablewidgetitem211.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem212 = self.clean_table.item(4, 0)
+        ___qtablewidgetitem212.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem213 = self.clean_table.item(5, 0)
+        ___qtablewidgetitem213.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem214 = self.clean_table.item(6, 0)
+        ___qtablewidgetitem214.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem215 = self.clean_table.item(7, 0)
+        ___qtablewidgetitem215.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem216 = self.clean_table.item(8, 0)
+        ___qtablewidgetitem216.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem217 = self.clean_table.item(9, 0)
+        ___qtablewidgetitem217.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem218 = self.clean_table.item(10, 0)
+        ___qtablewidgetitem218.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem219 = self.clean_table.item(11, 0)
+        ___qtablewidgetitem219.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        self.clean_table.setSortingEnabled(__sortingEnabled9)
+
+        self.btn_calcular.setText(QCoreApplication.translate("MainWindow", u"Calcular", None))
+        self.btn_limpiar.setText(QCoreApplication.translate("MainWindow", u"Limpiar", None))
         self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"4", None))
         self.pushButton_12.setText(QCoreApplication.translate("MainWindow", u"5", None))
     # retranslateUi
