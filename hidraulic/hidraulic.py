@@ -19,10 +19,13 @@ class Hidraulic(QMainWindow, Ui_MainWindow):
         yield_point = self.yield_point.value()
         gel_strength = self.gel_strength.value()
         bit_size = self.bit_size.value()
+        bit_size_alt = self.bit_size_alt.value()
         open_hole_length = self.open_hole_length.value()
         casing_size = self.casing_size.value()
+        casing_size_alt = self.casing_size_alt.value()
         casing_length = self.casing_length.value()
         drill_pipe_size = self.drill_pipe_size.value()
+        drill_pipe_size_alt = self.drill_pipe_size_alt.value()
         drill_collar_size = self.drill_collar_size.value()
         drill_collar_length = self.drill_collar_length.value()
         pump_output = self.pump_output.value()
@@ -87,3 +90,22 @@ class Hidraulic(QMainWindow, Ui_MainWindow):
         self.drill_collar_table.item(7, 0).setText(str(ret2))
         self.drill_collar_table.item(8, 0).setText(str(fp2))
         self.drill_collar_table.item(9, 0).setText(str(p_pipe2))
+
+        # Sarta
+        p_sarta = HidraulicFunctions.sarta(p_pipe, p_pipe2)
+        self.sarta.setValue(p_sarta)
+
+        # Dj
+        dj = HidraulicFunctions.dj(bit_size_alt)
+        self.dj.setValue(dj)
+
+        # Barrena
+        barrena = HidraulicFunctions.barrena(pump_output, mud_weight, dj)
+        self.barrena.setValue(barrena)
+
+        # Pipe / Casing Table
+        va1 = HidraulicFunctions.va1(pump_output, casing_size, drill_pipe_size_alt)
+
+        # Setting values into Pipe / Casing table
+        self.pipe_casing_table.item(0, 0).setText(str(va1))
+

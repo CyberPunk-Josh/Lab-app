@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1295</width>
-    <height>929</height>
+    <width>1303</width>
+    <height>947</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -406,7 +406,7 @@ font:75 12pt *Arial Narrow*;
              <string notr="true">background-color: rgb(255, 255, 255);</string>
             </property>
             <property name="currentIndex">
-             <number>3</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="page">
              <widget class="PlotWidget" name="RM_Widget" native="true">
@@ -2657,7 +2657,11 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   </widget>
                  </item>
                  <item row="1" column="1">
-                  <widget class="QDoubleSpinBox" name="sarta"/>
+                  <widget class="QDoubleSpinBox" name="sarta">
+                   <property name="maximum">
+                    <double>99999.990000000005239</double>
+                   </property>
+                  </widget>
                  </item>
                 </layout>
                </widget>
@@ -2807,7 +2811,11 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   </widget>
                  </item>
                  <item row="1" column="1">
-                  <widget class="QDoubleSpinBox" name="dj"/>
+                  <widget class="QDoubleSpinBox" name="dj">
+                   <property name="maximum">
+                    <double>9999.989999999999782</double>
+                   </property>
+                  </widget>
                  </item>
                  <item row="0" column="0">
                   <widget class="QLabel" name="label_47">
@@ -2817,7 +2825,11 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   </widget>
                  </item>
                  <item row="0" column="1">
-                  <widget class="QDoubleSpinBox" name="barrena"/>
+                  <widget class="QDoubleSpinBox" name="barrena">
+                   <property name="maximum">
+                    <double>99999.990000000005239</double>
+                   </property>
+                  </widget>
                  </item>
                  <item row="2" column="0">
                   <widget class="QLabel" name="label_49">

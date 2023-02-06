@@ -137,3 +137,25 @@ class HidraulicFunctions:
     def p_pipe_collar(fp1, vp1, mw, dpz, dcl):
         ppipe_value = round(((fp1 * pow(vp1, 2) * mw) / (25.8 * dpz)) * dcl, 3)
         return ppipe_value
+
+    # Sarta
+    def sarta(ppipe, pdc):
+        p_sarta = round(ppipe + pdc, 3)
+        return p_sarta
+
+    # Dj
+    def dj(bs):
+        dj_value = round(pow(bs, 2) + pow(bs, 2) + pow(bs, 2), 3)
+        return dj_value
+
+    # Barrena:
+    def barrena(po, mw, dj):
+        barrena_value = round((156.5 * (pow(po, 2)) * mw) / (pow(dj, 2)), 3)
+        return barrena_value
+
+    # Pipe Casing Functions
+
+    # Va1
+    def va1(po, cs, dpz):
+        va1_value = round((0.408 * po) / (pow(cs, 2) - pow(dpz, 2)), 2)
+        return va1_value

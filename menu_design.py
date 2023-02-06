@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'menurvGfuG.ui'
+## Form generated from reading UI file 'menuHVkjiM.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.3
 ##
@@ -1664,6 +1664,7 @@ class Ui_MainWindow(object):
 
         self.sarta = QDoubleSpinBox(self.gridLayoutWidget_6)
         self.sarta.setObjectName(u"sarta")
+        self.sarta.setMaximum(99999.990000000005239)
 
         self.gridLayout_6.addWidget(self.sarta, 1, 1, 1, 1)
 
@@ -1732,6 +1733,7 @@ class Ui_MainWindow(object):
 
         self.dj = QDoubleSpinBox(self.gridLayoutWidget_7)
         self.dj.setObjectName(u"dj")
+        self.dj.setMaximum(9999.989999999999782)
 
         self.gridLayout_7.addWidget(self.dj, 1, 1, 1, 1)
 
@@ -1742,6 +1744,7 @@ class Ui_MainWindow(object):
 
         self.barrena = QDoubleSpinBox(self.gridLayoutWidget_7)
         self.barrena.setObjectName(u"barrena")
+        self.barrena.setMaximum(99999.990000000005239)
 
         self.gridLayout_7.addWidget(self.barrena, 0, 1, 1, 1)
 
