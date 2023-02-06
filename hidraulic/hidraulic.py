@@ -24,6 +24,7 @@ class Hidraulic(QMainWindow, Ui_MainWindow):
         casing_size = self.casing_size.value()
         casing_size_alt = self.casing_size_alt.value()
         casing_length = self.casing_length.value()
+        casing_length_alt = self.casing_length_alt.value()
         drill_pipe_size = self.drill_pipe_size.value()
         drill_pipe_size_alt = self.drill_pipe_size_alt.value()
         drill_collar_size = self.drill_collar_size.value()
@@ -105,7 +106,24 @@ class Hidraulic(QMainWindow, Ui_MainWindow):
 
         # Pipe / Casing Table
         va1 = HidraulicFunctions.va1(pump_output, casing_size, drill_pipe_size_alt)
+        na = HidraulicFunctions.na(l_300, gel_strength)
+        ka = HidraulicFunctions.ka(l_300, na)
+        visea = HidraulicFunctions.visea(ka, va1, casing_size, drill_pipe_size_alt, na)
+        beta = HidraulicFunctions.beta(na)
+        rea = HidraulicFunctions.rea(va1, casing_size, drill_pipe_size_alt, mud_weight, visea, beta)
+        rela = HidraulicFunctions.rela(na)
+        reta = HidraulicFunctions.reta(na)
+        fa = HidraulicFunctions.fa(rea)
+        pa = HidraulicFunctions.pa(fa, va1, mud_weight, casing_size, drill_pipe_size_alt, casing_length_alt)
 
         # Setting values into Pipe / Casing table
         self.pipe_casing_table.item(0, 0).setText(str(va1))
-
+        self.pipe_casing_table.item(1, 0).setText(str(na))
+        self.pipe_casing_table.item(2, 0).setText(str(ka))
+        self.pipe_casing_table.item(3, 0).setText(str(visea))
+        self.pipe_casing_table.item(4, 0).setText(str(beta))
+        self.pipe_casing_table.item(5, 0).setText(str(rea))
+        self.pipe_casing_table.item(6, 0).setText(str(rela))
+        self.pipe_casing_table.item(7, 0).setText(str(reta))
+        self.pipe_casing_table.item(8, 0).setText(str(fa))
+        self.pipe_casing_table.item(9, 0).setText(str(pa))

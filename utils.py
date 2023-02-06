@@ -157,5 +157,50 @@ class HidraulicFunctions:
 
     # Va1
     def va1(po, cs, dpz):
-        va1_value = round((0.408 * po) / (pow(cs, 2) - pow(dpz, 2)), 2)
+        va1_value = round((0.408 * po) / (pow(cs, 2) - pow(dpz, 2)), 3)
         return va1_value
+
+    # na
+    def na(l300, gs):
+        na_value = round(0.5 * math.log(l300 / gs, 10), 3)
+        return na_value
+
+    # ka
+    def ka(l300, na):
+        ka_value = round((5.11 * l300) / (pow(511, na)), 3)
+        return ka_value
+
+    # visea
+    def visea(ka, va, cs, dps, na):
+        visea_value = round(100 * ka * (pow(((144 * va) / (cs - dps)), na - 1)), 3)
+        return visea_value
+
+    # beta
+    def beta(na):
+        beta_value = round(pow(((2 * na +1) / (3 * na)), na), 3)
+        return beta_value
+
+    # rea
+    def rea(va, cs, dps, mw, visea, beta):
+        rea_value = round((928 * va * (cs - dps) * mw) / (visea * beta), 3)
+        return rea_value
+
+    # rela
+    def rela(na):
+        rela_value = round(3470 - 1370 * na, 3)
+        return rela_value
+
+    # reta
+    def reta(na):
+        reta_value = round(4270 - 1370 * na, 3)
+        return reta_value
+
+    # fa
+    def fa(rea):
+        fa_value = round(24 / rea, 3)
+        return fa_value
+
+    # pa
+    def pa(fa, va, mw, cs, dps, cl):
+        pa_value = round(((fa * (pow(va, 2)) * mw) / ( 25.8 * (cs - dps))) * (cl), 3)
+        return pa_value
