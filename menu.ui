@@ -2839,7 +2839,11 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   </widget>
                  </item>
                  <item row="2" column="1">
-                  <widget class="QDoubleSpinBox" name="anular"/>
+                  <widget class="QDoubleSpinBox" name="anular">
+                   <property name="maximum">
+                    <double>99999.990000000005239</double>
+                   </property>
+                  </widget>
                  </item>
                 </layout>
                </widget>
@@ -3254,7 +3258,11 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   </widget>
                  </item>
                  <item row="0" column="1">
-                  <widget class="QDoubleSpinBox" name="p_total"/>
+                  <widget class="QDoubleSpinBox" name="p_total">
+                   <property name="maximum">
+                    <double>99999.990000000005239</double>
+                   </property>
+                  </widget>
                  </item>
                  <item row="2" column="1">
                   <widget class="QDoubleSpinBox" name="sarta_2"/>

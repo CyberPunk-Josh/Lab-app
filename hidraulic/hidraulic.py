@@ -28,6 +28,7 @@ class Hidraulic(QMainWindow, Ui_MainWindow):
         drill_pipe_size = self.drill_pipe_size.value()
         drill_pipe_size_alt = self.drill_pipe_size_alt.value()
         drill_collar_size = self.drill_collar_size.value()
+        drill_collar_size_alt = self.drill_collar_size_alt.value()
         drill_collar_length = self.drill_collar_length.value()
         pump_output = self.pump_output.value()
         pump_pressure = self.pump_pressure.value()
@@ -127,3 +128,64 @@ class Hidraulic(QMainWindow, Ui_MainWindow):
         self.pipe_casing_table.item(7, 0).setText(str(reta))
         self.pipe_casing_table.item(8, 0).setText(str(fa))
         self.pipe_casing_table.item(9, 0).setText(str(pa))
+
+        # Pipe / Open Hole
+        va2 = HidraulicFunctions.va1(pump_output, bit_size, drill_pipe_size_alt)
+        na2 = HidraulicFunctions.na(l_300, gel_strength)
+        ka2 = HidraulicFunctions.ka(l_300, na2)
+        visea2 = HidraulicFunctions.visea(ka2, va2, bit_size, drill_pipe_size_alt, na2)
+        beta2 = HidraulicFunctions.beta(na2)
+        rea2 = HidraulicFunctions.rea(va2, bit_size, drill_pipe_size_alt, mud_weight, visea2, beta2)
+        rela2 = HidraulicFunctions.rela(na2)
+        reta2 = HidraulicFunctions.reta(na2)
+        fa2 = HidraulicFunctions.fa(rea2)
+        pa2 = HidraulicFunctions.pa2(fa2, va2, mud_weight, bit_size, drill_pipe_size_alt,
+                                     open_hole_length, drill_collar_length)
+
+        # Setting values into Pipe / Open Hole table
+        self.pipe_open_table.item(0, 0).setText(str(va2))
+        self.pipe_open_table.item(1, 0).setText(str(na2))
+        self.pipe_open_table.item(2, 0).setText(str(ka2))
+        self.pipe_open_table.item(3, 0).setText(str(visea2))
+        self.pipe_open_table.item(4, 0).setText(str(beta2))
+        self.pipe_open_table.item(5, 0).setText(str(rea2))
+        self.pipe_open_table.item(6, 0).setText(str(rela2))
+        self.pipe_open_table.item(7, 0).setText(str(reta2))
+        self.pipe_open_table.item(8, 0).setText(str(fa2))
+        self.pipe_open_table.item(9, 0).setText(str(pa2))
+
+        # Drill Collar / Open Hole
+        va3 = HidraulicFunctions.va1(pump_output, bit_size, drill_collar_size_alt)
+        na3 = HidraulicFunctions.na(l_300, gel_strength)
+        ka3 = HidraulicFunctions.ka(l_300, na)
+        visea3 = HidraulicFunctions.visea(ka3, va3, bit_size, drill_collar_size_alt, na3)
+        beta3 = HidraulicFunctions.beta(na3)
+        rea3 = HidraulicFunctions.rea(va3, bit_size, drill_collar_size_alt, mud_weight, visea3, beta3)
+        rela3 = HidraulicFunctions.rela(na3)
+        reta3 = HidraulicFunctions.reta(na3)
+        fa3 = HidraulicFunctions.fa(rea3)
+        pa3 = HidraulicFunctions.pa(fa3, va3, mud_weight, bit_size, drill_collar_size_alt, drill_collar_length)
+
+        # Setting values into Drill Collar / Open Hole
+        self.drill_collar_open_table.item(0, 0).setText(str(va3))
+        self.drill_collar_open_table.item(1, 0).setText(str(na3))
+        self.drill_collar_open_table.item(2, 0).setText(str(ka3))
+        self.drill_collar_open_table.item(3, 0).setText(str(visea3))
+        self.drill_collar_open_table.item(4, 0).setText(str(beta3))
+        self.drill_collar_open_table.item(5, 0).setText(str(rea3))
+        self.drill_collar_open_table.item(6, 0).setText(str(rela3))
+        self.drill_collar_open_table.item(7, 0).setText(str(reta3))
+        self.drill_collar_open_table.item(8, 0).setText(str(fa3))
+        self.drill_collar_open_table.item(9, 0).setText(str(pa3))
+
+        # Anular
+        anular = HidraulicFunctions.anular(pa, pa2, pa3)
+        self.anular.setValue(anular)
+
+        # ECD
+        ecd = HidraulicFunctions.ecd(anular, casing_length, mud_weight)
+        self.ecd.setValue(ecd)
+
+        # PTotal
+        ptotal = HidraulicFunctions.pTotal(p_sup, p_sarta, barrena, anular)
+        self.p_total.setValue(ptotal)

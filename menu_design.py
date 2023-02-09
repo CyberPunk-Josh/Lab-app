@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'menuHVkjiM.ui'
+## Form generated from reading UI file 'menuaFrQry.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.3
 ##
@@ -1755,6 +1755,7 @@ class Ui_MainWindow(object):
 
         self.anular = QDoubleSpinBox(self.gridLayoutWidget_7)
         self.anular.setObjectName(u"anular")
+        self.anular.setMaximum(99999.990000000005239)
 
         self.gridLayout_7.addWidget(self.anular, 2, 1, 1, 1)
 
@@ -1934,6 +1935,7 @@ class Ui_MainWindow(object):
 
         self.p_total = QDoubleSpinBox(self.gridLayoutWidget_8)
         self.p_total.setObjectName(u"p_total")
+        self.p_total.setMaximum(99999.990000000005239)
 
         self.gridLayout_8.addWidget(self.p_total, 0, 1, 1, 1)
 

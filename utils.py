@@ -204,3 +204,23 @@ class HidraulicFunctions:
     def pa(fa, va, mw, cs, dps, cl):
         pa_value = round(((fa * (pow(va, 2)) * mw) / ( 25.8 * (cs - dps))) * (cl), 3)
         return pa_value
+
+    # Pipe / Open Hole
+    def pa2(fa, va, mw, cs, dps, ohl, dcl):
+        pa_value = round(((fa * (pow(va, 2)) * mw) / ( 25.8 * (cs - dps))) * (ohl - dcl), 3)
+        return pa_value
+
+    # Anular
+    def anular(pa1, pa2, pa3):
+        anular_value = round(pa1 + pa2 + pa3, 3)
+        return anular_value
+
+    # ECD
+    def ecd(anular, cl, mw):
+        ecd_value = round((anular / (0.052 * cl)) + mw, 3)
+        return ecd_value
+
+    # PTotal
+    def pTotal(superf, sarta, barrena, anular):
+        ptotal_value = round(superf + sarta + barrena + anular, 3)
+        return ptotal_value
