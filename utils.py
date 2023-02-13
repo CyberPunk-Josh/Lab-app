@@ -224,3 +224,37 @@ class HidraulicFunctions:
     def pTotal(superf, sarta, barrena, anular):
         ptotal_value = round(superf + sarta + barrena + anular, 3)
         return ptotal_value
+
+
+class AugerHydraulics:
+    def vab(po, bs, dps):
+       vab_value = round((24.5 * po) / (pow(bs, 2) - pow(dps, 2)) , 3)
+       return vab_value
+
+    def hhpb(po, drill):
+        hhpb_value = round((po * drill) / 1714, 3)
+        return hhpb_value
+
+    def hhpbpg2(hhpb, bs):
+        hhpbpg2_value = round((hhpb * 1.27) / (pow(bs, 2)), 3)
+        return hhpbpg2_value
+
+    def psib(drill, pp):
+        psib_value = round((drill / pp) * 100, 3)
+        return psib_value
+
+    def syshhp(pp, po):
+        syshhp_value = round((pp * po) / 1714, 3)
+        return syshhp_value
+
+    def vn(po, dj):
+        vn_value = round((417.2 * po) / dj, 3)
+        return vn_value
+
+    def iefe(mw, vn, po):
+        iefe_value = round((mw * vn * po) / 1930, 3)
+        return iefe_value
+
+    def iefepg(iefe, bs):
+        iefepg_value = round((iefe * 1.27) / pow(bs, 2), 3)
+        return iefepg_value

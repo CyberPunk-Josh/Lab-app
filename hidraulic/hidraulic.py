@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QMessageBox, QFileDialog
 
 from menu_design import *
-from utils import HidraulicFunctions
+from utils import HidraulicFunctions, AugerHydraulics
 
 
 class Hidraulic(QMainWindow, Ui_MainWindow):
@@ -189,3 +189,23 @@ class Hidraulic(QMainWindow, Ui_MainWindow):
         # PTotal
         ptotal = HidraulicFunctions.pTotal(p_sup, p_sarta, barrena, anular)
         self.p_total.setValue(ptotal)
+
+        # Hidraulica Barrena
+        vab = AugerHydraulics.vab(pump_output, bit_size, drill_pipe_size_alt)
+        hhpb = AugerHydraulics.hhpb(pump_output, barrena)
+        hhpbpg2 = AugerHydraulics.hhpbpg2(hhpb, bit_size)
+        psib_value = AugerHydraulics.psib(barrena, pump_pressure)
+        syshhp = AugerHydraulics.syshhp(pump_pressure, pump_output)
+        vn = AugerHydraulics.vn(pump_output, dj)
+        iefe = AugerHydraulics.iefe(mud_weight, vn, pump_output)
+        iefepg = AugerHydraulics.iefepg(iefe, bit_size)
+
+        # Setting values into  Auger Hidraulics table
+        self.hidraulic_drill_table.item(0, 0).setText(str(vab))
+        self.hidraulic_drill_table.item(1, 0).setText(str(hhpb))
+        self.hidraulic_drill_table.item(2, 0).setText(str(hhpbpg2))
+        self.hidraulic_drill_table.item(3, 0).setText(str(psib_value))
+        self.hidraulic_drill_table.item(4, 0).setText(str(syshhp))
+        self.hidraulic_drill_table.item(5, 0).setText(str(vn))
+        self.hidraulic_drill_table.item(6, 0).setText(str(iefe))
+        self.hidraulic_drill_table.item(7, 0).setText(str(iefepg))

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'menuaFrQry.ui'
+## Form generated from reading UI file 'menuTjNAdq.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.3
 ##
@@ -1643,7 +1643,7 @@ class Ui_MainWindow(object):
 
         self.gridLayoutWidget_6 = QWidget(self.scrollAreaWidgetContents)
         self.gridLayoutWidget_6.setObjectName(u"gridLayoutWidget_6")
-        self.gridLayoutWidget_6.setGeometry(QRect(1090, 40, 160, 64))
+        self.gridLayoutWidget_6.setGeometry(QRect(1090, 130, 160, 64))
         self.gridLayout_6 = QGridLayout(self.gridLayoutWidget_6)
         self.gridLayout_6.setObjectName(u"gridLayout_6")
         self.gridLayout_6.setContentsMargins(0, 0, 0, 0)
@@ -1722,7 +1722,7 @@ class Ui_MainWindow(object):
         self.label_46.setGeometry(QRect(500, 10, 61, 16))
         self.gridLayoutWidget_7 = QWidget(self.scrollAreaWidgetContents)
         self.gridLayoutWidget_7.setObjectName(u"gridLayoutWidget_7")
-        self.gridLayoutWidget_7.setGeometry(QRect(1090, 110, 163, 98))
+        self.gridLayoutWidget_7.setGeometry(QRect(1090, 200, 163, 98))
         self.gridLayout_7 = QGridLayout(self.gridLayoutWidget_7)
         self.gridLayout_7.setObjectName(u"gridLayout_7")
         self.gridLayout_7.setContentsMargins(0, 0, 0, 0)
@@ -1919,60 +1919,20 @@ class Ui_MainWindow(object):
         self.pipe_open_table.setGeometry(QRect(680, 490, 151, 331))
         self.gridLayoutWidget_8 = QWidget(self.scrollAreaWidgetContents)
         self.gridLayoutWidget_8.setObjectName(u"gridLayoutWidget_8")
-        self.gridLayoutWidget_8.setGeometry(QRect(1080, 220, 181, 166))
+        self.gridLayoutWidget_8.setGeometry(QRect(1090, 50, 161, 71))
         self.gridLayout_8 = QGridLayout(self.gridLayoutWidget_8)
         self.gridLayout_8.setObjectName(u"gridLayout_8")
         self.gridLayout_8.setContentsMargins(0, 0, 0, 0)
-        self.superf = QDoubleSpinBox(self.gridLayoutWidget_8)
-        self.superf.setObjectName(u"superf")
-
-        self.gridLayout_8.addWidget(self.superf, 1, 1, 1, 1)
-
-        self.label_55 = QLabel(self.gridLayoutWidget_8)
-        self.label_55.setObjectName(u"label_55")
-
-        self.gridLayout_8.addWidget(self.label_55, 2, 0, 1, 1)
-
         self.p_total = QDoubleSpinBox(self.gridLayoutWidget_8)
         self.p_total.setObjectName(u"p_total")
         self.p_total.setMaximum(99999.990000000005239)
 
         self.gridLayout_8.addWidget(self.p_total, 0, 1, 1, 1)
 
-        self.sarta_2 = QDoubleSpinBox(self.gridLayoutWidget_8)
-        self.sarta_2.setObjectName(u"sarta_2")
-
-        self.gridLayout_8.addWidget(self.sarta_2, 2, 1, 1, 1)
-
         self.label_53 = QLabel(self.gridLayoutWidget_8)
         self.label_53.setObjectName(u"label_53")
 
         self.gridLayout_8.addWidget(self.label_53, 0, 0, 1, 1)
-
-        self.barrena_2 = QDoubleSpinBox(self.gridLayoutWidget_8)
-        self.barrena_2.setObjectName(u"barrena_2")
-
-        self.gridLayout_8.addWidget(self.barrena_2, 3, 1, 1, 1)
-
-        self.label_54 = QLabel(self.gridLayoutWidget_8)
-        self.label_54.setObjectName(u"label_54")
-
-        self.gridLayout_8.addWidget(self.label_54, 1, 0, 1, 1)
-
-        self.label_56 = QLabel(self.gridLayoutWidget_8)
-        self.label_56.setObjectName(u"label_56")
-
-        self.gridLayout_8.addWidget(self.label_56, 3, 0, 1, 1)
-
-        self.label_57 = QLabel(self.gridLayoutWidget_8)
-        self.label_57.setObjectName(u"label_57")
-
-        self.gridLayout_8.addWidget(self.label_57, 4, 0, 1, 1)
-
-        self.anular_2 = QDoubleSpinBox(self.gridLayoutWidget_8)
-        self.anular_2.setObjectName(u"anular_2")
-
-        self.gridLayout_8.addWidget(self.anular_2, 4, 1, 1, 1)
 
         self.gridLayoutWidget_9 = QWidget(self.scrollAreaWidgetContents)
         self.gridLayoutWidget_9.setObjectName(u"gridLayoutWidget_9")
@@ -2623,11 +2583,7 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem156.setText(QCoreApplication.translate("MainWindow", u"0", None));
         self.pipe_open_table.setSortingEnabled(__sortingEnabled6)
 
-        self.label_55.setText(QCoreApplication.translate("MainWindow", u"Sarta", None))
         self.label_53.setText(QCoreApplication.translate("MainWindow", u"PTotal", None))
-        self.label_54.setText(QCoreApplication.translate("MainWindow", u"Superf", None))
-        self.label_56.setText(QCoreApplication.translate("MainWindow", u"Barrena", None))
-        self.label_57.setText(QCoreApplication.translate("MainWindow", u"Anular", None))
         self.label_58.setText(QCoreApplication.translate("MainWindow", u"ECD", None))
         self.label_59.setText(QCoreApplication.translate("MainWindow", u"Drill Collar/Open Hole", None))
         ___qtablewidgetitem157 = self.drill_collar_open_table.horizontalHeaderItem(0)
