@@ -10,6 +10,7 @@ class Hidraulic(QMainWindow, Ui_MainWindow):
 
         # Signals
         self.btn_calcular.clicked.connect(self.getHidraulicValues)
+        self.btn_limpiar.clicked.connect(self.clearAllValues)
 
     def getHidraulicValues(self):
         # Get values from UI
@@ -237,3 +238,97 @@ class Hidraulic(QMainWindow, Ui_MainWindow):
         self.clean_table.item(9, 0).setText(str(nhb_well))
         self.clean_table.item(10, 0).setText(str(khb_well))
         self.clean_table.item(11, 0).setText(str(cci_well))
+
+
+    def clearAllValues(self):
+        # Clear values in drill pipe table
+        self.drill_pipe_table.item(0, 0).setText('')
+        self.drill_pipe_table.item(1, 0).setText('')
+        self.drill_pipe_table.item(2, 0).setText('')
+        self.drill_pipe_table.item(3, 0).setText('')
+        self.drill_pipe_table.item(4, 0).setText('')
+        self.drill_pipe_table.item(5, 0).setText('')
+        self.drill_pipe_table.item(6, 0).setText('')
+        self.drill_pipe_table.item(7, 0).setText('')
+        self.drill_pipe_table.item(8, 0).setText('')
+        self.drill_pipe_table.item(9, 0).setText('')
+
+        # Setting values into  drill collar table
+        self.drill_collar_table.item(0, 0).setText('')
+        self.drill_collar_table.item(1, 0).setText('')
+        self.drill_collar_table.item(2, 0).setText('')
+        self.drill_collar_table.item(3, 0).setText('')
+        self.drill_collar_table.item(4, 0).setText('')
+        self.drill_collar_table.item(5, 0).setText('')
+        self.drill_collar_table.item(6, 0).setText('')
+        self.drill_collar_table.item(7, 0).setText('')
+        self.drill_collar_table.item(8, 0).setText('')
+        self.drill_collar_table.item(9, 0).setText('')
+
+        self.sarta.setValue(0)
+        self.dj.setValue(0)
+        self.barrena.setValue(0)
+
+        # Clear values in Pipe / Casing table
+        self.pipe_casing_table.item(0, 0).setText('')
+        self.pipe_casing_table.item(1, 0).setText('')
+        self.pipe_casing_table.item(2, 0).setText('')
+        self.pipe_casing_table.item(3, 0).setText('')
+        self.pipe_casing_table.item(4, 0).setText('')
+        self.pipe_casing_table.item(5, 0).setText('')
+        self.pipe_casing_table.item(6, 0).setText('')
+        self.pipe_casing_table.item(7, 0).setText('')
+        self.pipe_casing_table.item(8, 0).setText('')
+        self.pipe_casing_table.item(9, 0).setText('')
+
+        # Clear values into Pipe / Open Hole table
+        self.pipe_open_table.item(0, 0).setText('')
+        self.pipe_open_table.item(1, 0).setText('')
+        self.pipe_open_table.item(2, 0).setText('')
+        self.pipe_open_table.item(3, 0).setText('')
+        self.pipe_open_table.item(4, 0).setText('')
+        self.pipe_open_table.item(5, 0).setText('')
+        self.pipe_open_table.item(6, 0).setText('')
+        self.pipe_open_table.item(7, 0).setText('')
+        self.pipe_open_table.item(8, 0).setText('')
+        self.pipe_open_table.item(9, 0).setText('')
+
+        # Clear values in Drill Collar / Open Hole
+        self.drill_collar_open_table.item(0, 0).setText('')
+        self.drill_collar_open_table.item(1, 0).setText('')
+        self.drill_collar_open_table.item(2, 0).setText('')
+        self.drill_collar_open_table.item(3, 0).setText('')
+        self.drill_collar_open_table.item(4, 0).setText('')
+        self.drill_collar_open_table.item(5, 0).setText('')
+        self.drill_collar_open_table.item(6, 0).setText('')
+        self.drill_collar_open_table.item(7, 0).setText('')
+        self.drill_collar_open_table.item(8, 0).setText('')
+        self.drill_collar_open_table.item(9, 0).setText('')
+
+        self.anular.setValue(0)
+        self.ecd.setValue(0)
+        self.p_total.setValue(0)
+        self.p_sup.setValue(0)
+
+        self.hidraulic_drill_table.item(0, 0).setText('')
+        self.hidraulic_drill_table.item(1, 0).setText('')
+        self.hidraulic_drill_table.item(2, 0).setText('')
+        self.hidraulic_drill_table.item(3, 0).setText('')
+        self.hidraulic_drill_table.item(4, 0).setText('')
+        self.hidraulic_drill_table.item(5, 0).setText('')
+        self.hidraulic_drill_table.item(6, 0).setText('')
+        self.hidraulic_drill_table.item(7, 0).setText('')
+
+        # Setting values into Well Cleaning
+        self.clean_table.item(0, 0).setText('')
+        self.clean_table.item(1, 0).setText('')
+        self.clean_table.item(2, 0).setText('')
+        self.clean_table.item(3, 0).setText('')
+        self.clean_table.item(4, 0).setText('')
+        self.clean_table.item(5, 0).setText('')
+        self.clean_table.item(6, 0).setText('')
+        self.clean_table.item(7, 0).setText('')
+        self.clean_table.item(8, 0).setText('')
+        self.clean_table.item(9, 0).setText('')
+        self.clean_table.item(10, 0).setText('')
+        self.clean_table.item(11, 0).setText('')

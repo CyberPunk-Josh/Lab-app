@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'menuTjNAdq.ui'
+## Form generated from reading UI file 'menuRQXwjw.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.3
 ##
@@ -1352,13 +1352,13 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 1329, 909))
         self.label_21 = QLabel(self.scrollAreaWidgetContents)
         self.label_21.setObjectName(u"label_21")
-        self.label_21.setGeometry(QRect(40, 10, 401, 31))
+        self.label_21.setGeometry(QRect(40, 0, 601, 31))
         font2 = QFont()
         font2.setPointSize(15)
         self.label_21.setFont(font2)
         self.gridLayoutWidget_5 = QWidget(self.scrollAreaWidgetContents)
         self.gridLayoutWidget_5.setObjectName(u"gridLayoutWidget_5")
-        self.gridLayoutWidget_5.setGeometry(QRect(30, 40, 401, 781))
+        self.gridLayoutWidget_5.setGeometry(QRect(30, 40, 401, 807))
         self.gridLayout_5 = QGridLayout(self.gridLayoutWidget_5)
         self.gridLayout_5.setObjectName(u"gridLayout_5")
         self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
@@ -1643,7 +1643,7 @@ class Ui_MainWindow(object):
 
         self.gridLayoutWidget_6 = QWidget(self.scrollAreaWidgetContents)
         self.gridLayoutWidget_6.setObjectName(u"gridLayoutWidget_6")
-        self.gridLayoutWidget_6.setGeometry(QRect(1090, 130, 160, 64))
+        self.gridLayoutWidget_6.setGeometry(QRect(1090, 130, 160, 67))
         self.gridLayout_6 = QGridLayout(self.gridLayoutWidget_6)
         self.gridLayout_6.setObjectName(u"gridLayout_6")
         self.gridLayout_6.setContentsMargins(0, 0, 0, 0)
@@ -1716,13 +1716,13 @@ class Ui_MainWindow(object):
         __qtablewidgetitem93 = QTableWidgetItem()
         self.drill_pipe_table.setItem(9, 0, __qtablewidgetitem93)
         self.drill_pipe_table.setObjectName(u"drill_pipe_table")
-        self.drill_pipe_table.setGeometry(QRect(460, 30, 151, 331))
+        self.drill_pipe_table.setGeometry(QRect(470, 70, 151, 401))
         self.label_46 = QLabel(self.scrollAreaWidgetContents)
         self.label_46.setObjectName(u"label_46")
-        self.label_46.setGeometry(QRect(500, 10, 61, 16))
+        self.label_46.setGeometry(QRect(500, 50, 81, 16))
         self.gridLayoutWidget_7 = QWidget(self.scrollAreaWidgetContents)
         self.gridLayoutWidget_7.setObjectName(u"gridLayoutWidget_7")
-        self.gridLayoutWidget_7.setGeometry(QRect(1090, 200, 163, 98))
+        self.gridLayoutWidget_7.setGeometry(QRect(1090, 200, 169, 104))
         self.gridLayout_7 = QGridLayout(self.gridLayoutWidget_7)
         self.gridLayout_7.setObjectName(u"gridLayout_7")
         self.gridLayout_7.setContentsMargins(0, 0, 0, 0)
@@ -1807,13 +1807,13 @@ class Ui_MainWindow(object):
         __qtablewidgetitem114 = QTableWidgetItem()
         self.pipe_casing_table.setItem(9, 0, __qtablewidgetitem114)
         self.pipe_casing_table.setObjectName(u"pipe_casing_table")
-        self.pipe_casing_table.setGeometry(QRect(460, 490, 181, 331))
+        self.pipe_casing_table.setGeometry(QRect(460, 530, 201, 331))
         self.label_50 = QLabel(self.scrollAreaWidgetContents)
         self.label_50.setObjectName(u"label_50")
-        self.label_50.setGeometry(QRect(510, 460, 101, 16))
+        self.label_50.setGeometry(QRect(500, 500, 101, 16))
         self.label_51 = QLabel(self.scrollAreaWidgetContents)
         self.label_51.setObjectName(u"label_51")
-        self.label_51.setGeometry(QRect(640, 10, 91, 16))
+        self.label_51.setGeometry(QRect(670, 40, 91, 16))
         self.label_51.setAlignment(Qt.AlignCenter)
         self.drill_collar_table = QTableWidget(self.scrollAreaWidgetContents)
         if (self.drill_collar_table.columnCount() < 1):
@@ -1863,10 +1863,10 @@ class Ui_MainWindow(object):
         __qtablewidgetitem135 = QTableWidgetItem()
         self.drill_collar_table.setItem(9, 0, __qtablewidgetitem135)
         self.drill_collar_table.setObjectName(u"drill_collar_table")
-        self.drill_collar_table.setGeometry(QRect(630, 30, 151, 331))
+        self.drill_collar_table.setGeometry(QRect(650, 70, 151, 401))
         self.label_52 = QLabel(self.scrollAreaWidgetContents)
         self.label_52.setObjectName(u"label_52")
-        self.label_52.setGeometry(QRect(690, 460, 111, 16))
+        self.label_52.setGeometry(QRect(670, 500, 141, 20))
         self.label_52.setAlignment(Qt.AlignCenter)
         self.pipe_open_table = QTableWidget(self.scrollAreaWidgetContents)
         if (self.pipe_open_table.columnCount() < 1):
@@ -1916,7 +1916,7 @@ class Ui_MainWindow(object):
         __qtablewidgetitem156 = QTableWidgetItem()
         self.pipe_open_table.setItem(9, 0, __qtablewidgetitem156)
         self.pipe_open_table.setObjectName(u"pipe_open_table")
-        self.pipe_open_table.setGeometry(QRect(680, 490, 151, 331))
+        self.pipe_open_table.setGeometry(QRect(680, 530, 201, 331))
         self.gridLayoutWidget_8 = QWidget(self.scrollAreaWidgetContents)
         self.gridLayoutWidget_8.setObjectName(u"gridLayoutWidget_8")
         self.gridLayoutWidget_8.setGeometry(QRect(1090, 50, 161, 71))
@@ -1953,7 +1953,7 @@ class Ui_MainWindow(object):
 
         self.label_59 = QLabel(self.scrollAreaWidgetContents)
         self.label_59.setObjectName(u"label_59")
-        self.label_59.setGeometry(QRect(900, 460, 131, 16))
+        self.label_59.setGeometry(QRect(890, 500, 131, 16))
         self.drill_collar_open_table = QTableWidget(self.scrollAreaWidgetContents)
         if (self.drill_collar_open_table.columnCount() < 1):
             self.drill_collar_open_table.setColumnCount(1)
@@ -2002,10 +2002,10 @@ class Ui_MainWindow(object):
         __qtablewidgetitem177 = QTableWidgetItem()
         self.drill_collar_open_table.setItem(9, 0, __qtablewidgetitem177)
         self.drill_collar_open_table.setObjectName(u"drill_collar_open_table")
-        self.drill_collar_open_table.setGeometry(QRect(880, 490, 151, 331))
+        self.drill_collar_open_table.setGeometry(QRect(890, 530, 201, 331))
         self.label_60 = QLabel(self.scrollAreaWidgetContents)
         self.label_60.setObjectName(u"label_60")
-        self.label_60.setGeometry(QRect(850, 40, 141, 16))
+        self.label_60.setGeometry(QRect(830, 40, 191, 16))
         self.hidraulic_drill_table = QTableWidget(self.scrollAreaWidgetContents)
         if (self.hidraulic_drill_table.columnCount() < 1):
             self.hidraulic_drill_table.setColumnCount(1)
@@ -2046,10 +2046,10 @@ class Ui_MainWindow(object):
         __qtablewidgetitem194 = QTableWidgetItem()
         self.hidraulic_drill_table.setItem(7, 0, __qtablewidgetitem194)
         self.hidraulic_drill_table.setObjectName(u"hidraulic_drill_table")
-        self.hidraulic_drill_table.setGeometry(QRect(830, 60, 181, 281))
+        self.hidraulic_drill_table.setGeometry(QRect(830, 70, 181, 391))
         self.label_61 = QLabel(self.scrollAreaWidgetContents)
         self.label_61.setObjectName(u"label_61")
-        self.label_61.setGeometry(QRect(1120, 410, 111, 16))
+        self.label_61.setGeometry(QRect(1120, 430, 151, 16))
         self.clean_table = QTableWidget(self.scrollAreaWidgetContents)
         if (self.clean_table.columnCount() < 1):
             self.clean_table.setColumnCount(1)
@@ -2106,7 +2106,7 @@ class Ui_MainWindow(object):
         __qtablewidgetitem219 = QTableWidgetItem()
         self.clean_table.setItem(11, 0, __qtablewidgetitem219)
         self.clean_table.setObjectName(u"clean_table")
-        self.clean_table.setGeometry(QRect(1090, 440, 171, 411))
+        self.clean_table.setGeometry(QRect(1110, 460, 171, 411))
         self.btn_calcular = QPushButton(self.scrollAreaWidgetContents)
         self.btn_calcular.setObjectName(u"btn_calcular")
         self.btn_calcular.setGeometry(QRect(40, 850, 111, 41))

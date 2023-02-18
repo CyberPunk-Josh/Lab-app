@@ -406,7 +406,7 @@ font:75 12pt *Arial Narrow*;
              <string notr="true">background-color: rgb(255, 255, 255);</string>
             </property>
             <property name="currentIndex">
-             <number>3</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="page">
              <widget class="PlotWidget" name="RM_Widget" native="true">
@@ -2239,8 +2239,8 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                 <property name="geometry">
                  <rect>
                   <x>40</x>
-                  <y>10</y>
-                  <width>401</width>
+                  <y>0</y>
+                  <width>601</width>
                   <height>31</height>
                  </rect>
                 </property>
@@ -2259,7 +2259,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   <x>30</x>
                   <y>40</y>
                   <width>401</width>
-                  <height>781</height>
+                  <height>807</height>
                  </rect>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_5">
@@ -2635,7 +2635,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                   <x>1090</x>
                   <y>130</y>
                   <width>160</width>
-                  <height>64</height>
+                  <height>67</height>
                  </rect>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_6">
@@ -2668,10 +2668,10 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                <widget class="QTableWidget" name="drill_pipe_table">
                 <property name="geometry">
                  <rect>
-                  <x>460</x>
-                  <y>30</y>
+                  <x>470</x>
+                  <y>70</y>
                   <width>151</width>
-                  <height>331</height>
+                  <height>401</height>
                  </rect>
                 </property>
                 <row>
@@ -2784,8 +2784,8 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                 <property name="geometry">
                  <rect>
                   <x>500</x>
-                  <y>10</y>
-                  <width>61</width>
+                  <y>50</y>
+                  <width>81</width>
                   <height>16</height>
                  </rect>
                 </property>
@@ -2798,8 +2798,8 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                  <rect>
                   <x>1090</x>
                   <y>200</y>
-                  <width>163</width>
-                  <height>98</height>
+                  <width>169</width>
+                  <height>104</height>
                  </rect>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_7">
@@ -2851,8 +2851,8 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                 <property name="geometry">
                  <rect>
                   <x>460</x>
-                  <y>490</y>
-                  <width>181</width>
+                  <y>530</y>
+                  <width>201</width>
                   <height>331</height>
                  </rect>
                 </property>
@@ -2965,8 +2965,8 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                <widget class="QLabel" name="label_50">
                 <property name="geometry">
                  <rect>
-                  <x>510</x>
-                  <y>460</y>
+                  <x>500</x>
+                  <y>500</y>
                   <width>101</width>
                   <height>16</height>
                  </rect>
@@ -2978,8 +2978,8 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                <widget class="QLabel" name="label_51">
                 <property name="geometry">
                  <rect>
-                  <x>640</x>
-                  <y>10</y>
+                  <x>670</x>
+                  <y>40</y>
                   <width>91</width>
                   <height>16</height>
                  </rect>
@@ -2994,10 +2994,10 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                <widget class="QTableWidget" name="drill_collar_table">
                 <property name="geometry">
                  <rect>
-                  <x>630</x>
-                  <y>30</y>
+                  <x>650</x>
+                  <y>70</y>
                   <width>151</width>
-                  <height>331</height>
+                  <height>401</height>
                  </rect>
                 </property>
                 <row>
@@ -3109,10 +3109,10 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                <widget class="QLabel" name="label_52">
                 <property name="geometry">
                  <rect>
-                  <x>690</x>
-                  <y>460</y>
-                  <width>111</width>
-                  <height>16</height>
+                  <x>670</x>
+                  <y>500</y>
+                  <width>141</width>
+                  <height>20</height>
                  </rect>
                 </property>
                 <property name="text">
@@ -3126,8 +3126,8 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                 <property name="geometry">
                  <rect>
                   <x>680</x>
-                  <y>490</y>
-                  <width>151</width>
+                  <y>530</y>
+                  <width>201</width>
                   <height>331</height>
                  </rect>
                 </property>
@@ -3291,8 +3291,8 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                <widget class="QLabel" name="label_59">
                 <property name="geometry">
                  <rect>
-                  <x>900</x>
-                  <y>460</y>
+                  <x>890</x>
+                  <y>500</y>
                   <width>131</width>
                   <height>16</height>
                  </rect>
@@ -3304,9 +3304,9 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                <widget class="QTableWidget" name="drill_collar_open_table">
                 <property name="geometry">
                  <rect>
-                  <x>880</x>
-                  <y>490</y>
-                  <width>151</width>
+                  <x>890</x>
+                  <y>530</y>
+                  <width>201</width>
                   <height>331</height>
                  </rect>
                 </property>
@@ -3419,9 +3419,9 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                <widget class="QLabel" name="label_60">
                 <property name="geometry">
                  <rect>
-                  <x>850</x>
+                  <x>830</x>
                   <y>40</y>
-                  <width>141</width>
+                  <width>191</width>
                   <height>16</height>
                  </rect>
                 </property>
@@ -3433,9 +3433,9 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                 <property name="geometry">
                  <rect>
                   <x>830</x>
-                  <y>60</y>
+                  <y>70</y>
                   <width>181</width>
-                  <height>281</height>
+                  <height>391</height>
                  </rect>
                 </property>
                 <row>
@@ -3528,8 +3528,8 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                 <property name="geometry">
                  <rect>
                   <x>1120</x>
-                  <y>410</y>
-                  <width>111</width>
+                  <y>430</y>
+                  <width>151</width>
                   <height>16</height>
                  </rect>
                 </property>
@@ -3540,8 +3540,8 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
                <widget class="QTableWidget" name="clean_table">
                 <property name="geometry">
                  <rect>
-                  <x>1090</x>
-                  <y>440</y>
+                  <x>1110</x>
+                  <y>460</y>
                   <width>171</width>
                   <height>411</height>
                  </rect>
