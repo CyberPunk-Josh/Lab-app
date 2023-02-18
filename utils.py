@@ -258,3 +258,53 @@ class AugerHydraulics:
     def iefepg(iefe, bs):
         iefepg_value = round((iefe * 1.27) / pow(bs, 2), 3)
         return iefepg_value
+
+
+class WellCleaning:
+    def vab(po, bs, dps):
+        vab_value = round((24.5 * po) / (pow(bs, 2) - pow(dps, 2)), 3)
+        return vab_value
+
+    def beta(pv, mw, pd):
+        beta_value = round(pv / (mw * pd), 3)
+        return beta_value
+
+    def gamma(beta, pd, dp, mw):
+        gamma_value = round((36800 / pow(beta, 2)) * pd * ((dp / mw) - 1) + 1, 3)
+        return gamma_value
+
+    def vs(beta, gamma):
+        vs_value = round(0.45 * beta * (math.sqrt(gamma) - 1), 3)
+        return vs_value
+
+    def npt(vab, vs):
+        npt_value = round(vab - vs, 3)
+        return npt_value
+
+    def itt(cl, npt):
+        itt_value = round(cl / npt, 3)
+        return itt_value
+
+    def nte(npt, vab):
+        nte_value = round((npt / vab) * 100, 3)
+        return nte_value
+
+    def ca(bs, rp, po, nte):
+        ca_value = round((((pow(bs, 2)) * rp)/(448.4 * po * (nte / 100))) * 100, 3)
+        return ca_value
+
+    def denca(solids, ca, mw):
+        denca_value = round(solids * 8.34 * (ca / 100) + (mw * (1 - (ca / 100))), 3)
+        return denca_value
+
+    def nhb(l600, l300):
+        nhb_value = round(3.32 * math.log(l600 / l300, 10), 3)
+        return nhb_value
+
+    def khb(l300, nhb):
+        khb_value = round(l300 * (pow(511, (1 - nhb))), 3)
+        return khb_value
+
+    def cci(mw, khb, vab):
+        cci_value = round((mw * khb * vab) / 400000, 3)
+        return cci_value

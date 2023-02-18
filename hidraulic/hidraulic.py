@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QMessageBox, QFileDialog
 
 from menu_design import *
-from utils import HidraulicFunctions, AugerHydraulics
+from utils import HidraulicFunctions, AugerHydraulics, WellCleaning
 
 
 class Hidraulic(QMainWindow, Ui_MainWindow):
@@ -209,3 +209,31 @@ class Hidraulic(QMainWindow, Ui_MainWindow):
         self.hidraulic_drill_table.item(5, 0).setText(str(vn))
         self.hidraulic_drill_table.item(6, 0).setText(str(iefe))
         self.hidraulic_drill_table.item(7, 0).setText(str(iefepg))
+
+        # Well Cleaning
+        vab_well = WellCleaning.vab(pump_output, bit_size, drill_pipe_size_alt)
+        beta_well = WellCleaning.beta(plastic_viscosity, mud_weight, diameter_of_particle)
+        gamma_well = WellCleaning.gamma(beta_well, diameter_of_particle, density_of_particle, mud_weight)
+        vs_well = WellCleaning.vs(beta_well, gamma_well)
+        npt_well = WellCleaning.npt(vab_well, vs_well)
+        itt_well = WellCleaning.itt(casing_length_alt, npt_well)
+        nte_well = WellCleaning.nte(npt_well, vab_well)
+        ca_well = WellCleaning.ca(bit_size, rate_of_penetration, pump_output, nte_well)
+        denca_well = WellCleaning.denca(solid_sg, ca_well, mud_weight)
+        nhb_well = WellCleaning.nhb(l_600, l_300)
+        khb_well = WellCleaning.khb(l_300, nhb_well)
+        cci_well = WellCleaning.cci(mud_weight, khb_well, vab_well)
+
+        # Setting values into Well Cleaning
+        self.clean_table.item(0, 0).setText(str(vab_well))
+        self.clean_table.item(1, 0).setText(str(beta_well))
+        self.clean_table.item(2, 0).setText(str(gamma_well))
+        self.clean_table.item(3, 0).setText(str(vs_well))
+        self.clean_table.item(4, 0).setText(str(npt_well))
+        self.clean_table.item(5, 0).setText(str(itt_well))
+        self.clean_table.item(6, 0).setText(str(nte_well))
+        self.clean_table.item(7, 0).setText(str(ca_well))
+        self.clean_table.item(8, 0).setText(str(denca_well))
+        self.clean_table.item(9, 0).setText(str(nhb_well))
+        self.clean_table.item(10, 0).setText(str(khb_well))
+        self.clean_table.item(11, 0).setText(str(cci_well))
